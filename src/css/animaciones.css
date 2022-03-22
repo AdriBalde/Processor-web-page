@@ -1,0 +1,104 @@
+/*
+------------------------------
+ANIMACIÓN NAVEGADOR ARQUITECTURA
+------------------------------
+*/
+
+header nav ul li#Arquitectura span.fa-angle-up {
+  display: none;
+}
+
+header nav ul li#Arquitectura:hover span.fa-angle-up {
+  display: inline-block;
+}
+
+header nav ul li#Arquitectura span.fa-angle-down {
+
+}
+
+header nav ul li#Arquitectura:hover span.fa-angle-down {
+  display: none;
+}
+
+/*
+------------------------------
+FIN ANIMACIÓN NAVEGADOR ARQUITECTURA
+------------------------------
+*/
+
+
+
+/*
+------------------------------
+    TRANSICIONES ENLACES
+------------------------------
+*/
+
+a {
+  transition: all .25s ease-in;
+}
+
+/*
+------------------------------
+   FIN TRANSICIONES ENLACES
+------------------------------
+*/
+
+
+
+/*
+------------------------------
+   ANIMACIÓN TÍTULO PÁGINA
+------------------------------
+*/
+
+@keyframes Fade_in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+header div#icono_cabecera a h1 span, header div#icono_cabecera a img {
+  transition: all .25s ease-in;
+}
+
+header div#icono_cabecera a h1 span {
+  opacity: 0;
+  animation: Fade_in 1s ease forwards;
+}
+
+header div#icono_cabecera a h1 span:nth-child(1) { animation-delay: 0.075s; }
+
+header div#icono_cabecera a h1 span:nth-child(2) { animation-delay: 0.15s; }
+
+header div#icono_cabecera a h1 span:nth-child(3) { animation-delay: 0.225s; }
+
+header div#icono_cabecera a h1 span:nth-child(4) { animation-delay: 0.3s; }
+
+header div#icono_cabecera a h1 span:nth-child(5) { animation-delay: 0.375s; }
+
+header div#icono_cabecera a h1 span:nth-child(6) { animation-delay: 0.45s; }
+
+header div#icono_cabecera a h1 span:nth-child(7) { animation-delay: 0.525s; }
+
+header div#icono_cabecera a h1 span:nth-child(8) { animation-delay: 0.6s; }
+
+header div#icono_cabecera a h1 span:nth-child(9) { animation-delay: 0.675s; }
+
+header div#icono_cabecera a h1 span:nth-child(10) { animation-delay: 0.75s; }
+
+header div#icono_cabecera a h1 span:nth-child(11) { animation-delay: 0.825s; }
+
+header div#icono_cabecera a h1 span:nth-child(12) { animation-delay: 0.9s; }
+
+header div#icono_cabecera a h1 span:nth-child(13) { animation-delay: 0.975s; }
+
+/*
+------------------------------
+  FIN ANIMACIÓN TÍTULO PÁGINA
+------------------------------
+v

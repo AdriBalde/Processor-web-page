@@ -1,0 +1,313 @@
+/*
+------------------------------
+      CARGAR LAS FUENTES
+------------------------------
+*/
+
+@font-face {
+  font-family: 'sf-pro';
+    src: url('../fonts/sf-pro/sf-pro.eot');
+    src:
+      url('../fonts/sf-pro/sf-pro.eot')  format('embedded-opentype'),
+      url('../fonts/sf-pro/sf-pro.woff') format('woff'),
+      url('../fonts/sf-pro/sf-pro.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+    src: url('../fonts/Poppins/Poppins-regular.eot');
+    src:
+      url('../fonts/Poppins/Poppins-regular.eot')  format('embedded-opentype'),
+      url('../fonts/Poppins/Poppins-regular.woff') format('woff'),
+      url('../fonts/Poppins/Poppins-regular.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Lora';
+    src: url('../fonts/Lora/static/Lora-regular.eot');
+    src:
+      url('../fonts/Lora/static/Lora-regular.eot')  format('embedded-opentype'),
+      url('../fonts/Lora/static/Lora-regular.woff') format('woff'),
+      url('../fonts/Lora/static/Lora-regular.ttf')  format('truetype');
+}
+
+@font-face{
+  font-family: 'FontAwesome';
+    src: url('../fonts/Symbols/fontawesome-webfont.eot?v=4.7.0');
+    src:
+      url('../fonts/Symbols/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),
+      url('../fonts/Symbols/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
+      url('../fonts/Symbols/fontawesome-webfont.woff?v=4.7.0') format('woff'),
+      url('../fonts/Symbols/fontawesome-webfont.ttf?v=4.7.0') format('truetype');
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fa{
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+}
+
+.fa-angle-down:before{content:"\f107"}
+.fa-angle-up:before{content:"\f106"}
+.fa-caret-down:before{content:"\f0d7"}
+
+/*
+------------------------------
+   FIN CARGAR LAS FUENTES
+------------------------------
+*/
+
+
+
+
+
+/*
+------------------------------
+    VALORES POR DEFECTO
+------------------------------
+*/
+
+body {
+  color: black;
+
+  font-family: Poppins, sans-serif;
+  font-size: 1em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+span.negrita {
+  font-weight: bold;
+}
+
+span.ruta {
+  text-decoration: underline;
+}
+
+/*
+------------------------------
+   FIN VALORES POR DEFECTO
+------------------------------
+*/
+
+
+
+
+
+/*
+------------------------------
+           HEADER
+------------------------------
+*/
+
+header {
+  color: var(--black);
+}
+
+header:hover {
+  color: var(--gray);
+}
+
+header:hover div#icono_cabecera a {
+  color: var(--black);
+}
+
+/*
+------------------------------
+          NAVEGADOR
+------------------------------
+*/
+
+header nav ul li a:hover {
+  color: var(--black);
+
+  text-decoration: underline;
+}
+
+header nav ul li ul li a:hover {
+  text-decoration: underline;
+}
+
+/*
+------------------------------
+        FIN NAVEGADOR
+------------------------------
+
+
+
+------------------------------
+       TÍTULO PÁGINA
+------------------------------
+*/
+
+header div#icono_cabecera a h1 {
+  font-family: Lora, serif;
+  font-weight: normal;
+}
+
+header div#icono_cabecera:hover a h1 {
+  color: var(--dark_blue);
+}
+
+/*
+------------------------------
+      FIN TÍTULO PÁGINA
+------------------------------
+
+
+
+------------------------------
+           IDIOMA
+------------------------------
+*/
+header div#idioma:hover span {
+  color: var(--black);
+}
+
+header div#idioma a:first-child:hover {
+  color: var(--black);
+
+  text-decoration: underline;
+}
+
+header div#idioma a:nth-child(3):hover {
+  color: var(--black);
+
+  text-decoration: underline;
+}
+
+/*
+------------------------------
+         FIN IDIOMA
+------------------------------
+
+------------------------------
+        FIN HEADER
+------------------------------
+*/
+
+
+
+
+
+/*
+------------------------------
+     NAVEGADOR CONTENIDO
+------------------------------
+*/
+
+body > nav {
+  font-size: 0.9em;
+}
+
+body > nav > ul > li:first-child {
+  font-size: 1.5em;
+}
+
+body > nav a:hover {
+  color: var(--blue);
+}
+
+/*
+------------------------------
+   FIN NAVEGADOR CONTENIDO
+------------------------------
+*/
+
+
+
+
+
+/*
+------------------------------
+           SECTION
+------------------------------
+*/
+
+section {
+  line-height: 2em;
+
+  text-align: justify;
+
+  font-family: Lora, serif;
+}
+
+section figcaption {
+  color: gray;
+
+  line-height: 1.25em;
+
+  text-align: center;
+
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+section h1, section h2, section h3, section h4 {
+  text-align: center;
+
+  font-family: Poppins, sans-serif;
+
+  font-weight: 500;
+}
+
+section h4 a {
+  text-decoration: underline;
+}
+
+section h4 a:hover {
+  color: var(--blue);
+}
+
+section ul {
+  text-align: left;
+}
+
+/*
+------------------------------
+         FIN SECTION
+------------------------------
+*/
+
+
+
+
+
+/*
+------------------------------
+           FOOTER
+------------------------------
+*/
+
+footer {
+  font-size: 0.9em;
+}
+
+footer a:nth-child(2):hover {
+  text-decoration: underline;
+}
+
+footer a:nth-child(3):hover {
+  text-decoration: underline;
+}
+
+footer a:nth-child(4):hover {
+  text-decoration: underline;
+}
+
+/*
+------------------------------
+          FIN FOOTER
+------------------------------
+*/

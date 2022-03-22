@@ -1,0 +1,214 @@
+/*
+------------------------------
+           IMAGES
+------------------------------
+
+------------------------------
+     VALORES POR DEFECTO
+------------------------------
+*/
+
+img {
+  width: 100%;
+}
+
+iframe {
+  width: 100%;
+  height: 380px;
+}
+
+/*
+------------------------------
+  FIN VALORES POR DEFECTO
+------------------------------
+*/
+
+header div#icono_cabecera:hover a img {
+  filter: invert(1);
+}
+
+section figure {
+  margin: 3em 0;
+}
+
+section img#procesador_1 {
+  margin: 0 25%;
+  width: 50%;
+
+  border-radius: 20px;
+
+  filter: sepia(0.25);
+}
+
+section img#arquitectura_procesador, section img#EsquemaALU {
+  margin: 0 35%;
+  width: 30%;
+}
+
+section img#operaciones_alu {
+  border-radius: 20px;
+}
+
+section img#tipos_de_procesadores_2 {
+  margin: 0 10%;
+  width: 80%;
+
+  border-radius: 20px;
+}
+
+section img#gpu_1 {
+  margin: 0 15%;
+  width: 70%;
+}
+
+/*
+------------------------------
+         FIN IMAGES
+------------------------------
+*/
+
+
+
+
+
+/*
+------------------------------
+           @MEDIA
+------------------------------
+*/
+
+/*
+------------------------------
+            1650
+------------------------------
+*/
+@media only screen and (max-width: 1650px) {
+
+  body > nav {
+    font-size: 0.9em;
+  }
+}
+
+/*
+------------------------------
+          FIN 1650
+------------------------------
+
+
+
+
+
+------------------------------
+            1500
+------------------------------
+*/
+
+@media only screen and (max-width: 1500px) {
+
+  body > nav {
+    max-width: 90%;
+
+    font-size: 0.8em;
+  }
+
+  header {
+      grid-template-areas:
+        ".    icon  language"
+        "nav  nav   nav";
+  }
+
+  header nav {
+    justify-self: center;
+  }
+
+/*
+------------------------------
+          FIN 1500
+------------------------------
+
+
+
+
+
+------------------------------
+             1250
+------------------------------
+*/
+
+@media only screen and (max-width: 1250px) {
+
+  body > nav {
+    position: fixed;
+    top: 0;
+
+    width: 1.5em;
+    height: 100%;
+
+    z-index: 1;
+
+    background-image: url(../images/menu_bar.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
+
+  body > nav > ul {
+    display: none;
+
+    position: relative;
+  }
+
+  body > nav:hover {
+    width: 20em;
+
+    background-image: none;
+  }
+
+  body > nav:hover > ul {
+    display: block;
+  }
+}
+}
+
+/*
+------------------------------
+          FIN 1250
+------------------------------
+
+
+
+
+
+------------------------------
+             928
+------------------------------
+*/
+
+@media only screen and (max-width: 928px) {
+
+  iframe {
+    height: 41vw;
+  }
+
+  footer address {
+    grid-template-columns: auto;
+    grid-auto-flow: row;
+  }
+
+  footer div#validaciones {
+    margin: 0 47%;
+  }
+
+}
+
+/*
+------------------------------
+           FIN 928
+------------------------------
+
+
+
+------------------------------
+         FIN @MEDIA
+------------------------------
+*/
