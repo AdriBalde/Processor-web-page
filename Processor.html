@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+	<!-- METAS -->
+		<!-- charset -->
+		<meta charset="utf-8">
+
+		<!-- keywords -->
+		<meta name="keywords" content="Computer Science, Computer Science Engineering Degree,
+    Mathematics Degree, Rioja's University, Microprocessors, CPU, Processors,
+		Maria Bakaikoa, Daniel Argáiz, Adrián Baldellou">
+
+		<!-- description -->
+		<meta name="description" content="In this web page you can find information
+		about processors, such as the different architectures that exist or
+		the connections they have with the outside (the rest of the components of a computer).">
+
+		<!-- autores -->
+		<meta name="Author" content="Maria Bakaikoa, Daniel Argáiz, Adrián Baldellou">
+
+		<!-- viewport para los css que usen @media -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<!-- HOJAS CSS EXTERNAS -->
+		<link rel="stylesheet" type="text/css" href="../../src/css/layout.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/backgrouds.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/text.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/media.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/animaciones.css">
+
+	<!-- TITLE -->
+		<title> Processor (CPU) - Unirioja </title>
+
+	</head>
+
+
+
+
+
+	<body>
+
+	<!-- CABECERA DE LA PÁGINA CON SU NAVEGADOR -->
+		<header>
+
+			<!-- ICONO DE LA PÁGINA QUE AL CLICKARLO TE LLEVA AL INICIO -->
+			<div id="icono_cabecera">
+				<a href="">
+					<img src="../../src/images/icono_cabecera.png" alt="Web page logo">
+					<h1>
+						   <span>T</span><!-- A
+						--><span>h</span><!-- N
+            --><span>e</span><!-- I
+            --><span> </span><!-- M
+            --><span>P</span><!-- A
+            --><span>r</span><!-- C
+            --><span>o</span><!-- I
+            --><span>c</span><!-- Ó
+            --><span>e</span><!-- N
+            --><span>s</span><!--
+            --><span>s</span><!--
+            --><span>o</span><!--
+            --><span>r</span>
+					</h1>
+				</a>
+			</div>
+			<!-- FIN ICONO DE LA PÁGINA QUE AL CLICKARLO TE LLEVA AL INICIO -->
+
+
+
+			<!-- NAVEGADOR PRINCIPAL DE LA PÁGINA -->
+			<!-- CAMBIAR LOS HREF DEPENDIENDO DE LA PAGINA -->
+			<nav id="navpricipal">
+				<ul>
+					<li>   <a href="Processor.html"> Processor </a>   </li>
+					<li id="Arquitectura">
+						<a href="Architecture.html"> Architecture <span class="simbolo fa fa-angle-down"></span> <span class="simbolo fa fa-angle-up"></span>  </a>
+						<ul>
+							<li>   <a href="ControlUnit.html"> Control Unit </a>   </li>
+							<li>   <a href="ArithmeticLogicUnit.html"> Arithmetic-Logic Unit </a>   </li>
+							<li>   <a href="Cache.html"> Cache </a>   </li>
+							<li>   <a href="Registers.html"> Registers </a>   </li>
+						</ul>
+					</li>
+					<li>   <a href="Connections.html"> Connections </a>   </li>
+					<li>   <a href="Types.html"> Types </a>   </li>
+				</ul>
+			</nav>
+			<!-- FIN NAVEGADOR PRINCIPAL DE LA PÁGINA -->
+
+
+
+			<!-- BOTON PARA CAMBIAR EL IDIOMA -->
+			<div id="idioma">
+				<a href="../es/Procesador.html">ES</a>
+				<span id="es|en"> | </span>
+				<a href="">EN</a>
+			</div>
+			<!-- FIN BOTON PARA CAMBIAR EL IDIOMA -->
+		</header>
+	<!-- FIN CABECERA DE LA PÁGINA CON SU NAVEGADOR -->
+
+
+
+
+
+	<!-- NAVEGADOR DEL CONTENIDO -->
+		<nav>
+			<ul>
+				<li id="tcontenidos"> Table of contents </li>
+				<li>
+
+					<a href="#Definicion"> What is a processor? </a>
+
+					<ul>
+						<li> <a href="#Ciclos"> Processor cycles </a> </li>
+					</ul>
+
+				</li>
+				<li>
+
+					<a href="#ArquitecturaSection"> Processor architecture </a>
+
+					<ul>
+						<li> <a href="#CU"> Control Unit </a> </li>
+						<li> <a href="#ALU"> Arithmetic-Logic Unit </a> </li>
+						<li> <a href="#Caché"> Cache </a> </li>
+						<li> <a href="#Registros"> Registers </a> </li>
+					</ul>
+
+				</li>
+			</ul>
+
+		</nav>
+	<!-- FIN NAVEGADOR DEL CONTENIDO -->
+
+
+
+
+
+	<!-- SECCIONES DE LA PÁGINA -->
+		<section>
+
+		<!-- DEFINICION -->
+			<h2>
+				What is a processor?
+				<a id="Definicion"></a>
+			</h2>
+
+			<p>
+				A computer's microprocessor is its Central Processing Unit (CPU).
+				It is the core or brain of the computer, it performs basic calculations and manages the operation of the rest of the components.
+				It consists of the Control Unit (CU) and the Arithmetic Logic Unit (ALU).
+			</p>
+
+			<figure>
+				<img src="../../src/images/procesador_1.jfif" alt="Image of the first Intel processor, the i4004" id="procesador_1">
+				<figcaption> This is the first processor manufactured by Intel, the i4004. A 4-bit processor with 16 pins. </figcaption>
+			</figure>
+
+			<p>
+				The processor is an electronic circuit and works by performing basic arithmetic operations (addition, subtraction, multiplication and division),
+				logical operations (logic gates, AND, OR, XOR...) and control operations (synchronization clock with the main memory),
+				and is responsible for processing the computer's input and output data ( assisted by the PCH (Platform Controller Hub) to control the peripherals).
+			</p>
+
+
+			<!-- CICLOS -->
+			<h3>
+				Processor cycles
+				<a id="Ciclos"></a>
+			</h3>
+
+			<p>
+				Processors perform millions of operations per second.
+				However, a processor is only capable of performing a very limited number of operations per cycle.
+				In contrast, today's processors are capable of millions of cycles per second.
+			</p>
+
+			<p>
+				A CPU cycle is an electromagnetic pulse. This pulse is emitted by an internal clock of the processor.
+				Each time this oscillator emits a pulse the processor performs a series of operations. Processor cycles are measured in GHz.
+			</p>
+			<!-- FIN CICLOS -->
+		<!-- FIN DEFINICIÓN -->
+
+
+
+
+		<!-- ARQUITECTURA -->
+			<h2>
+				Processor architecture
+				<a id="ArquitecturaSection"></a>
+			</h2>
+
+			<p>
+				The processor is the coordinator of all the tasks performed by a PC, which means that its internal design is very important.
+				Inside, it is nothing more than a set of interconnected blocks in which each one of them performs a function.
+				The design of these elements and how they are interconnected is what is called processor architecture.
+			</p>
+
+			<figure>
+				<img src="../../src/images/arquitectura_procesador.png" alt="Apple's M1 chip architecture diagram" id="arquitectura_procesador">
+				<figcaption> Apple's M1 chip architecture diagram </figcaption>
+			</figure>
+
+
+			<!-- CU -->
+			<h3>
+				Control Unit (CU)
+				<a id="CU"></a>
+			</h3>
+
+			<p>
+				It is in charge of performing the instruction cycle:
+			</p>
+
+			<ul>
+				<li> Fetch: read the instructions in memory (i.e. the program to be executed). </li>
+				<li> Decode: decode the instructions and, if necessary, the memory addresses involved. </li>
+				<li> Execute: execute the instructions given by the program (sending the necessary commands to the rest of the processor components).​ </li>
+			</ul>​
+			<!-- FIN CU -->
+
+
+			<!-- ALU -->
+			<h3>
+				Arithmetic Logic Unit (ALU)
+				<a id="ALU"></a>
+			</h3>
+
+			<p>
+				It is responsible for performing arithmetic (addition, subtraction...) and logical (NOT, AND, OR, XOR...) operations with the received data.
+				It consists of a series of modules that perform the different operations.
+				The CU is in charge of selecting the operation to be performed by enabling the data paths between the various ALU operators
+				and between the internal registers.
+			</p>
+
+			<figure>
+				<img src="../../src/images/operaciones_alu.png" alt="Image of some of the operations that ALU can perform" id="operaciones_alu">
+				<figcaption> These are some of the operations that the Arithmetic-Logic Unit is capable of performing. </figcaption>
+			</figure>
+			<!-- FIN ALU -->
+
+
+			<!-- CACHE -->
+			<h3>
+				 Cache
+				 <a id="Caché"></a>
+			</h3>
+
+			<p>
+				They are an intermediate memory between the main memory (RAM) and the processor. They are faster but smaller than the main memory.
+				They are hierarchically divided into L1, L2, L3, or more, with L1 being the fastest and smallest and L3 or L4 or... the slowest and largest.
+			</p>
+			<!-- FIN CACHE -->
+
+
+			<!-- REGISTROS -->
+			<h3>
+				Registers
+				<a id="Registros"></a>
+			</h3>
+
+			<p>
+				These are small, very fast memory units located inside the CPU.
+				They store the results of instruction execution and the internal CPU configuration or information during the last ALU operation.
+				There are different registers with different functions, some of the most important ones are:
+			</p>
+
+			<ul>
+				<li> Program counter: Stores the address of the next instruction to be executed.​ </li>
+				<li> Instruction Register: stores the instruction captured in memory, the one that is being executed.​ </li>
+				<li> Status Register: reports the result obtained in the last ALU operation.​ </li>
+				<li> Accumulator Register: stores the results of arithmetic and logical operations. </li>
+			</ul>
+			<!-- REGISTROS -->
+		<!-- FIN ARQUITECTURA -->
+
+
+
+
+		<!-- CONEXIONES -->
+			<h2>
+				External connections
+				<a id="Conexiones"></a>
+			</h2>
+
+			<p>
+				One of the big steps that made computers possible was the incorporation
+				of an internal memory (the main memory) that allowed computers to store
+				not only the data but also the program to be executed.
+			</p>
+
+			<p>
+				Modern computers have many external connections. Connections to the main memory (RAM),
+				and to a large number of input and output devices: hard disks that allow permanent
+				storage of data and programs, keyboard, mouse, GPU, audio inputs and outputs...
+			</p>
+		<!-- FIN CONEXIONES -->
+
+
+
+
+		<!-- TIPOS -->
+			<h2>
+				Other processor types
+				<a id="Tipos"></a>
+			</h2>
+
+			<p>
+				So far we have referred interchangeably to processor or CPU, however,
+				they are not the same from a specialized point of view.
+			</p>
+
+			<figure>
+				<img src="../../src/images/tipos_de_procesadores_2.jfif" alt="Image of a GPU" id="tipos_de_procesadores_2">
+				<figcaption>
+					Today we have standard graphics cards have between 4 and 8 GB of RAM
+					while in the 80's a computer had around 8KB of RAM.
+				</figcaption>
+			</figure>
+
+			<p>
+				Technically a processor is an integrated electronic circuit that performs logical,
+				arithmetic and input/output operations.
+				Under this definition the CPU is only one of the processors in a current computer.
+				It is the processor that is dedicated to all general tasks that do not have a specialized processor.
+				Another processor found in all computers is the GPU (Graphics Processing Unit).
+			</p>
+
+			<p>
+				This is a list of some of the processors that exist:
+			</p>
+
+			<ul>
+				<li>
+					<span class="negrita"> Graphics Processing Unit (GPU): </span>
+					GPUs were introduced at the end of the last century due to the need
+					to perform graphics calculations quickly and thus keep computers from
+					being laggy when they had to render more complex animations.
+				</li>
+
+				<li>
+					<span class="negrita"> Application-Specific Instruction-set Processor (ASIP): </span>
+					ASIP processors are those that have been created to perform a single function.
+					Their circuitry is specially designed for a single type of computation.
+				</li>
+
+				<li>
+					<span class="negrita"> Physics Processing Unit (PPU): </span>
+					A PPU is a microprocessor designed for physics computation,
+					especially for the physics engine of a video game.
+				</li>
+
+				<li>
+					<span class="negrita"> Digital Signal Processor (DSP): </span>
+					A DSP is a specialized microprocessor whose architecture is optimized
+					for the needs of digital signal processing.
+				</li>
+
+				<li>
+					<span class="negrita"> Cuantum computers: </span>
+					Quantum computers, being a new paradigm at both the hardware and software levels,
+					have their own processors and technology very different from what we have seen so far.
+				</li>
+			</ul>
+		<!-- FIN TIPOS -->
+
+		</section>
+	<!-- FIN SECCIONES DE LA PÁGINA -->
+
+
+
+
+
+	<!-- PIE DE PÁGINA -->
+		<footer>
+			<address>
+				<p> Authors: Maria Bakaikoa, Daniel Argáiz, Adrián Baldellou </p>
+				<a href="mailto:maria.bakaikoa@alum.unirioja.es"> Contact Maria Bakaikoa </a>
+				<a href="mailto:daniel.argaiz@alum.unirioja.es"> Contact Daniel Argáiz </a>
+				<a href="mailto:adrian.baldellou@alum.unirioja.es"> Contact Adrián Baldellou </a>
+			</address>
+
+			<div id="validaciones">
+				<img src="../../src/images/html5_icon.png" alt="HTML 5 validation icon" id="html5_icon">
+				<img src="../../src/images/css3_icon.gif" alt="CSS 3 validation icon" id="css3_icon">
+				<img src="../../src/images/wcag1AA.gif" alt="WCAG 2.0 (level AA) accessibility validation icon" id="wcag1AA_icon">
+			</div>
+		</footer>
+	<!-- FIN PIE DE PÁGINA -->
+
+
+
+
+
+	<!-- JAVASCRIPT EXTERNO -->
+		<script src="src/javascript/interacciones.js"></script>
+
+	</body>
+</html>

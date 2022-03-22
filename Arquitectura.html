@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+
+	<!-- METAS -->
+		<!-- charset -->
+		<meta charset="utf-8">
+
+		<!-- keywords -->
+		<meta name="keywords" content="Sistemas Informáticos, Grado en Ingeniería Informática,
+    Grado en Matemáticas, Universidad de La Rioja, Microprocesadores, CPU, Procesadores,
+		Maria Bakaikoa, Daniel Argáiz, Adrián Baldellou">
+
+		<!-- description -->
+		<meta name="description" content="En esta página puedes encontrar información acerca de los
+		procesadores (UCP) o CPUs, como por ejemplo, las diferentes arquitecturas que existen o las conexiones
+		que tienen con el exterior (el resto de componentes de un ordenador). En concreto este es un apartado referido
+		a la arquitectura de procesadores, sus tipos y la actualidad.">
+
+		<!-- autores -->
+		<meta name="Author" content="Maria Bakaikoa, Daniel Argáiz, Adrián Baldellou">
+
+		<!-- viewport para los css que usen @media -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<!-- HOJAS CSS EXTERNAS -->
+		<link rel="stylesheet" type="text/css" href="../../src/css/layout.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/backgrouds.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/text.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/media.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/animaciones.css">
+
+	<!-- TITLE -->
+		<title> Arquitectura (CPU) - Unirioja </title>
+
+	</head>
+
+
+
+
+
+	<body>
+
+	<!-- CABECERA DE LA PÁGINA CON SU NAVEGADOR -->
+		<header>
+
+			<!-- ICONO DE LA PÁGINA QUE AL CLICKARLO TE LLEVA AL INICIO -->
+			<div id="icono_cabecera">
+				<a href="Procesador.html">
+					<img src="../../src/images/icono_cabecera.png" alt="Logo de la página">
+					<h1>
+						    <span>E</span><!--
+	           --><span>l</span><!--
+	           --><span> </span><!--
+	           --><span>P</span><!--
+	           --><span>r</span><!--
+	           --><span>o</span><!--
+	           --><span>c</span><!--
+	           --><span>e</span><!--
+	           --><span>s</span><!--
+	           --><span>a</span><!--
+	           --><span>d</span><!--
+	           --><span>o</span><!--
+	           --><span>r</span>
+					</h1>
+				</a>
+			</div>
+			<!-- FIN ICONO DE LA PÁGINA QUE AL CLICKARLO TE LLEVA AL INICIO -->
+
+
+
+			<!-- NAVEGADOR PRINCIPAL DE LA PÁGINA -->
+			<nav id="navpricipal">
+				<ul>
+					<li>   <a href="Procesador.html"> Procesador </a>   </li>
+					<li id="Arquitectura">
+						<a href="Arquitectura.html"> Arquitectura <span class="simbolo fa fa-angle-down"></span><span class="simbolo fa fa-angle-up"></span> </a>
+						<ul>
+							<li>   <a href="UnidaddeControl.html"> Unidad de control </a>   </li>
+							<li>   <a href="UnidadAritmeticoLogica.html"> Unidad aritmético lógica </a>   </li>
+							<li>   <a href="Cache.html"> Caché </a>   </li>
+							<li>   <a href="Registros.html"> Registros </a>   </li>
+						</ul>
+					</li>
+					<li>   <a href="Conexiones.html"> Conexiones </a>   </li>
+					<li>   <a href="Tipos.html"> Tipos </a>   </li>
+				</ul>
+			</nav>
+			<!-- FIN NAVEGADOR PRINCIPAL DE LA PÁGINA -->
+
+
+
+			<!-- BOTON PARA CAMBIAR EL IDIOMA -->
+			<div id="idioma">
+				<a href="">ES</a>
+				<span id="es|en"> | </span>
+				<a href="../en/Architecture.html">EN</a>
+			</div>
+			<!-- FIN BOTON PARA CAMBIAR EL IDIOMA -->
+		</header>
+	<!-- FIN CABECERA DE LA PÁGINA CON SU NAVEGADOR -->
+
+
+
+
+
+	<!-- NAVEGADOR DEL CONTENIDO -->
+		<nav>
+			<ul>
+				<li id="tcontenidos"> Tabla de contenidos </li>
+				<li>
+
+					<a href="#Definicion"> ¿Qué es la arquitectura del procesador? </a>
+
+				</li>
+				<li>
+
+					<a href="#Tipos">Tipos de Arquitectuas de procesadores</a>
+
+					<ul>
+						<li> <a href="#Cisc"> Arquitectura CISC </a> </li>
+						<li> <a href="#Risc"> Arquitectura RISC </a> </li>
+						<li> <a href="#Vliw"> Arquitectura VLIW </a> </li>
+						<li> <a href="#Epic"> Arquitectura EPIC </a> </li>
+					</ul>
+
+				</li>
+				<li>
+
+					<a href="#Actualidad"> Actualidad en procesadores</a>
+
+				</li>
+			</ul>
+
+		</nav>
+	<!-- FIN NAVEGADOR DEL CONTENIDO -->
+
+
+
+
+
+	<!-- SECCIONES DE LA PÁGINA -->
+		<section>
+
+		<!-- DEFINICION -->
+			<h2>
+				<a id="Definicion"> Definición de la arquitectura de procesadores: </a>
+			</h2>
+
+			<p>
+				La arquitectura de un procesador es básicamente la estructura interna que tiene este elemento.
+				No hablamos de la forma y tamaño, sino de cómo están ubicadas las distintas unidades lógicas
+				y físicas que componen un procesador, hablamos de la ALU, registros, Unidad de Control, etc.
+				En este sentido, actualmente existen dos tipos de arquitectura principales la CISC y la RISC,
+				dos formas de trabajar basadas en la arquitectura de Von Neuman, la persona que inventó el microprocesador digital en 1945.
+			</p>
+
+			<figure>
+				<img src="../../src/images/arquitectura_procesador_1.jfif" alt="Imagen de la arquitectura de un procesador" id="DA">
+				<figcaption> Imagen sobre la arquitectura de procesadores </figcaption>
+			</figure>
+
+			<p>
+				Si bien es cierto que arquitectura no solamente significa esto,
+				ya que en la actualidad los fabricantes más bien toman el concepto con interés comercial,
+				para definir las distintas generaciones de sus procesadores.
+				Pero una cosa debemos tener presente, y es que todos los procesadores de
+				escritorio actuales están basados en la arquitectura CISC o x86. Lo que ocurre,
+				es que los fabricantes realizan pequeñas modificaciones a ésta
+				arquitectura incorporando elementos como más cantidad de núcleos, controladores de memoria,
+				buses internos, memoria caché de distintos niveles, etc.
+				Así escuchamos denominaciones como Coffee Lake, Skylake, Zen, Zen 2, etc.
+			</p>
+		<!-- FIN DEFINICION -->
+
+
+
+
+		<!-- TIPOS -->
+			<h2>
+				<a id="Tipos"> Tipos de Arquitectuas de procesadores </a>
+			</h2>
+
+			<p>
+				Hoy podemos distinguir entre cuatro tipos de arquitecturas:
+				arquitectura CISC (Complex Instruction Set Computer) o ejecución de una instrucción compleja,
+				que forma la base de todos los procesadores x86 o compatibles con intel,
+				arquitectura RISC (Reduced Instruction Set Computer) o que ejecuta un número limitado de instrucciones,
+				arquitectura VLIW (Very Long Instruction Word), y la más cercana EPIC (Explicit Parallel Instruction Computing).
+				Cabe señalar que algunos productos del mercado pueden combinar un número de estos modelos de arquitecturas.
+			</p>
+
+			<p>
+				Si bien es cierto que arquitectura no solamente significa esto,
+				ya que en la actualidad los fabricantes más bien toman el concepto con interés comercial,
+				para definir las distintas generaciones de sus procesadores.
+				Pero una cosa debemos tener presente, y es que todos los procesadores de escritorio
+				actuales están basados en la arquitectura CISC o x86. Lo que ocurre, es que los
+				fabricantes realizan pequeñas modificaciones a ésta arquitectura incorporando
+				elementos como más cantidad de núcleos, controladores de memoria,
+				buses internos, memoria caché de distintos niveles, etc.
+				Así escuchamos denominaciones como Coffee Lake, Skylake, Zen, Zen 2, etc.
+			</p>
+
+
+			<!-- CISC -->
+			<h3>
+				<a id="Cisc"> Arquitectura CISC </a>
+			</h3>
+
+			<p>
+				Los microprocesadores CISC tienen un conjunto de instrucciones que se caracteriza
+				por ser muy amplio y permitir operaciones complejas entre operadores situados en
+				la memoria o en los registros internos, en contraposición a la arquitectura RISC.
+				Es capaz de ejecutar varios centenares de instrucciones complejas diferentes siendo extremadamente versátil.
+				Este tipo de arquitectura dificulta el paralelismo entre instrucciones, por lo que,
+				en la actualidad, la mayoría de los sistemas CISC de alto rendimiento implementan
+				un sistema que convierte dichas instrucciones complejas en varias
+				instrucciones simples del tipo RISC, llamadas generalmente microinstrucciones.
+				Los CISC pertenecen a la primera corriente de construcción de procesadores,
+				antes del desarrollo de los RISC. Ejemplos de ellos son: Motorola 68000,
+				Zilog Z80 y toda la familia Intel x86, AMD x86-64 usada en la mayoría de las computadoras personales actuales.
+				Hay que hacer notar, sin embargo, que la utilización del término CISC comenzó
+				tras la aparición de los procesadores RISC como nomenclatura despectiva
+				por parte de los defensores/creadores de estos últimos. Véase Retrónimo.
+			</p>
+			<!-- FIN CISC -->
+
+
+			<!-- RISC -->
+			<h3>
+				<a id="Risc">Arquitectura RISC</a>
+			</h3>
+
+			<p>
+				En arquitectura computacional, RISC  es un tipo de diseño de CPU generalmente
+				utilizado en microprocesadores o microcontroladores con las siguientes características fundamentales:
+			</p>
+
+			<ul>
+				<li> Instrucciones de tamaño fijo y presentadas en un reducido número de formatos. </li>
+				<li> Solo las instrucciones de carga y almacenamiento acceden a la memoria de datos. </li>
+			</ul>
+
+			<p>
+				Además estos procesadores suelen disponer de muchos registros de propósito general.
+				El objetivo de diseñar máquinas con esta arquitectura es posibilitar la segmentación
+				y el paralelismo en la ejecución de instrucciones y reducir los accesos a memoria.
+				Las máquinas RISC protagonizan la tendencia actual de construcción de microprocesadores.
+				PowerPC,DEC Alpha, MIPS, ARM, SPARC son ejemplos de algunos de ellos.
+				RISC es una filosofía de diseño de CPU para computadora que está a favor
+				de conjuntos de instrucciones pequeñas y simples que toman menor tiempo
+				para ejecutarse. El tipo de procesador más comúnmente utilizado en equipos
+				de escritorio, el x86, está basado en CISC en lugar de RISC, aunque las
+				versiones más nuevas traducen instrucciones basadas en CISC x86 a
+				instrucciones más simples basadas en RISC para uso interno antes de su ejecución.
+				La idea fue inspirada por el hecho de que muchas de las características
+				que eran incluidas en los diseños tradicionales de CPU para aumentar la
+				velocidad estaban siendo ignoradas por los programas que eran ejecutados en ellas.
+				Además, la velocidad del procesador en relación con la memoria de la
+				computadora que accedía era cada vez más alta. Esto conlleva la aparición
+				de numerosas técnicas para reducir el procesamiento dentro del CPU,
+				así como de reducir el número total de accesos a 	memoria.
+				Terminología más moderna se refiere a esos diseños como arquitecturas de carga-almacenamiento.
+			</p>
+			<!-- FIN RISC -->
+
+
+			<!-- VLIW -->
+			<h3>
+				<a id="Vliw">Arquitectura VLIW</a>
+			</h3>
+
+			<p>
+				La arquitectura de CPU de palabra de instrucción muy larga (VLIW, del inglés very long instruction word)
+				implementa una forma de paralelismo a nivel de instrucción. Es similar a las arquitecturas superescalares,
+				ambas usan varias unidades funcionales (por ejemplo varias ALU, varios multiplicadores, etc.) para lograr ese paralelismo.
+				Los procesadores con arquitecturas VLIW se caracterizan, como su nombre indica, por tener
+				juegos de instrucciones muy simples en cuanto a número de instrucciones diferentes,
+				pero muy grandes en cuanto al tamaño de cada instrucción. Esto es así porque en cada
+				instrucción se especifica el estado de todas y cada una de las unidades funcionales del sistema,
+				con el objetivo de simplificar el diseño del hardware al dejar todo el trabajo de
+				planificar el código en manos del programador/compilador, en oposición a un procesador superescalar,
+				en el que es el hardware en tiempo de ejecución el que planifica las instrucciones.
+			</p>
+			<!-- FIN VLIW -->
+
+
+			<!-- EPIC -->
+			<h3>
+				<a id="Epic">Arquitectura EPIC</a>
+			</h3>
+
+			<p>
+				La arquitectura EPIC (Explicit Parallel Instruction Computing) utiliza
+				ambos principios de la arquitectura de super escala y el procesamiento en paralelo de datos.
+				Los procesadores de 64 bits desde la nueva generación Itanium, producidos por Intel,
+				han tomado prestado la arquitectura EPIC, más exitosa que la ILP
+				(Instruction Level Parallelism), desarrolladas conjuntamente por HP e Intel.
+				A diferencia de la tecnología RISC, donde el procesador organiza las
+				secuencias de instrucciones, en el modelo EPIC este es el compilador,
+				que es responsable de optimizar el código a fin de tomar ventaja de la ejecución en paralelo.
+				En la predicción de un ramal, realizada por procesadores RISC se basa en
+				un comportamiento estadístico, justificando la solución por control sobre
+				la instrucción en la dirección correcta. El tamaño del error es de 10 a 20 %,
+				lo que lleva a un aumento en el tiempo de ejecución de un programa y que puede
+				ser reducido si la optimización se realiza según un algoritmo controlado
+				por un compilador y teniendo en cuenta la ejecución previa como un conjunto
+				en lugar de reaccionar basándose en el comportamiento pasado.
+				Así, los microprocesadores EPIC calculan en paralelo las diferentes
+				posibilidades y la mejor es guardada después. Por lo tanto el controlador
+				controla por separado el importante llamado flujo de datos
+				(un proceso, permitiendo optimizar el orden de procesamiento de los datos)
+				con el objetivo de controlar todos los cálculos en paralelo, sin pérdidas de velocidad.
+			</p>
+			<!-- FIN EPIC -->
+		<!-- FIN TIPOS -->
+
+
+
+
+		<!-- ACTUALIDAD -->
+			<h2>
+				<a id="Actualidad">Actualidad en procesadores</a>
+			</h2>
+
+			<p>
+				Hace relativamente poco Intel sacó su nueva gama de procesadores,
+				los intel-12000, los cuales son creados con un nuevo proceso de fabricación, Intel 7.
+				Este hecho es especialmente recalcable teniendo en cuenta que desde hacía
+				ya unos cuantos años Intel solo estaba implementando ligeras mejoras, pero en
+				este caso sorprendió con su nueva arquitectura híbrida,
+				como ya estaba usando Apple con la serie de procesadores M1.
+			</p>
+
+			<p>
+				Esta arquitectura se basa en la utilización de núcleos de alto y bajo consumo(big/little):
+			</p>
+
+			<p>
+				En arquitectura computacional, RISC  es un tipo de diseño de CPU generalmente
+				utilizado en microprocesadores o microcontroladores con las siguientes características fundamentales:
+			</p>
+
+			<ul>
+				<li>
+					Los P-Cores son núcleos de gran tamaño y que ofrecen un gran rendimiento,
+					pero a cambio de ser menos eficientes energéticamente.
+				</li>
+
+				<li>
+					Los E-Cores son núcleos de menor tamaño, lo que le permite a Intel
+					colocar una mayor cantidad en un mismo espacio y tienen menor consumo energético.
+				</li>
+			</ul>
+
+			<p>
+				Esta nueva arquitectura hace que los procesadores Intel puedan competir en esta gama
+				con los procesadores Ryzen(amd), que actualmente son considerados mejores en esta gama de precios.
+			</p>
+
+			<p>
+				Por otra parte AMD tiene la serie Ryzen 5000, los cuales apuestan por una
+				la arquitectura Zen 3, la cual marca un importante salto generacional, en términos de IPC.
+				Según las pruebas, Ryzen por fin superaría a Intel en rendimiento monohilo
+				(la salida de esta serie de procesadores fue hace cosa de un año), en la actualidad,
+				con la nueva arquitectura usada por intel,
+				esto ya no es correcto, pero AMD, tiene planteada ya
+				la salida de sus nuevos procesadores basados en Zen 4.
+			</p>
+
+			<p>
+				Por último, Apple actualmente está apostando por la arquitectura ya
+				presente en sus serie de procesadores M1, la cual es una arquitectura híbrida.
+				Utilizando la tecnología de proceso de 5 nanómetros, contando con ocho núcleos
+				Firestorm de alto rendimiento y dos núcleos Icestorm. Esta nueva
+				arquitectura permite un increíble rendimiento y optimizar la energía, lo que conlleva
+				estar presente como una de las mejores opciones actualmente.
+			</p>
+		<!-- FIN ACTUALIDAD -->
+
+		</section>
+	<!-- FIN SECCIONES DE LA PÁGINA -->
+
+
+
+
+
+	<!-- PIE DE PÁGINA -->
+		<footer>
+			<address>
+				<p> Autores: Maria Bakaikoa, Daniel Argáiz, Adrián Baldellou </p>
+				<a href="mailto:maria.bakaikoa@alum.unirioja.es"> Contacto Maria Bakaikoa </a>
+				<a href="mailto:daniel.argaiz@alum.unirioja.es"> Contacto Daniel Argáiz </a>
+				<a href="mailto:adrian.baldellou@alum.unirioja.es"> Contacto Adrián Baldellou </a>
+			</address>
+
+			<div id="validaciones">
+				<img src="../../src/images/html5_icon.png" alt="Icono de validación de HTML 5" id="html5_icon">
+				<img src="../../src/images/css3_icon.gif" alt="Icono de validación de CSS 3" id="css3_icon">
+				<img src="../../src/images/wcag1AA.gif" alt="Icono de validación de accesibilidad WCAG 2.0 (level AA)" id="wcag1AA_icon">
+			</div>
+		</footer>
+	<!-- FIN PIE DE PÁGINA -->
+
+
+
+
+
+	<!-- JAVASCRIPT EXTERNO -->
+	<!-- CAMBIAR SRC DEPENDIENDO DE LA PAGINA -->
+		<script src="src/javascript/interacciones.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+
+	<!-- METAS -->
+		<!-- charset -->
+		<meta charset="utf-8">
+
+		<!-- keywords -->
+		<meta name="keywords" content="Sistemas Informáticos, Grado en Ingeniería Informática,
+    Grado en Matemáticas, Universidad de La Rioja, Microprocesadores, CPU, Procesadores, Tipos de procesadores,
+		Maria Bakaikoa, Daniel Argáiz, Adrián Baldellou">
+
+		<!-- description -->
+		<meta name="description" content="En esta página puedes encontrar información acerca de los
+		tipos de procesadores. Acerca de las tarjetas gráficas (GPUs), de los procesadores especializados (ASIP),
+		de procesadores para calculo de físicas (PPU) y de algunos más.">
+
+		<!-- autores -->
+		<meta name="Author" content="Maria Bakaikoa, Daniel Argáiz, Adrián Baldellou">
+
+		<!-- viewport para los css que usen @media -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<!-- HOJAS CSS EXTERNAS -->
+		<link rel="stylesheet" type="text/css" href="../../src/css/layout.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/backgrouds.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/text.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/media.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/animaciones.css">
+
+	<!-- TITLE -->
+		<title> Tipos (CPU) - Unirioja </title>
+
+	</head>
+
+
+
+
+
+	<body>
+
+	<!-- CABECERA DE LA PÁGINA CON SU NAVEGADOR -->
+		<header>
+
+			<!-- ICONO DE LA PÁGINA QUE AL CLICKARLO TE LLEVA AL INICIO -->
+			<div id="icono_cabecera">
+				<a href="Procesador.html">
+					<img src="../../src/images/icono_cabecera.png" alt="Logo de la página">
+					<h1>
+						   <span>E</span><!--
+            --><span>l</span><!--
+            --><span> </span><!--
+            --><span>P</span><!--
+            --><span>r</span><!--
+            --><span>o</span><!--
+            --><span>c</span><!--
+            --><span>e</span><!--
+            --><span>s</span><!--
+            --><span>a</span><!--
+            --><span>d</span><!--
+            --><span>o</span><!--
+            --><span>r</span>
+					</h1>
+				</a>
+			</div>
+			<!-- FIN ICONO DE LA PÁGINA QUE AL CLICKARLO TE LLEVA AL INICIO -->
+
+
+
+			<!-- NAVEGADOR PRINCIPAL DE LA PÁGINA -->
+			<nav id="navpricipal">
+				<ul>
+					<li>   <a href="Procesador.html"> Procesador </a>   </li>
+					<li id="Arquitectura">
+						<a href="Arquitectura.html"> Arquitectura <span class="simbolo fa fa-angle-down"></span> <span class="simbolo fa fa-angle-up"></span>  </a>
+						<ul>
+							<li>   <a href="UnidaddeControl.html"> Unidad de control </a>   </li>
+							<li>   <a href="UnidadAritmeticoLogica.html"> Unidad aritmético lógica </a>   </li>
+							<li>   <a href="Cache.html"> Caché </a>   </li>
+							<li>   <a href="Registros.html"> Registros </a>   </li>
+						</ul>
+					</li>
+					<li>   <a href="Conexiones.html"> Conexiones </a>   </li>
+					<li>   <a href="Tipos.html"> Tipos </a>   </li>
+				</ul>
+			</nav>
+			<!-- FIN NAVEGADOR PRINCIPAL DE LA PÁGINA -->
+
+
+
+			<!-- BOTON PARA CAMBIAR EL IDIOMA -->
+			<div id="idioma">
+				<a href="">ES</a>
+				<span id="es|en"> | </span>
+				<a href="../en/Types.html">EN</a>
+			</div>
+			<!-- FIN BOTON PARA CAMBIAR EL IDIOMA -->
+		</header>
+	<!-- FIN CABECERA DE LA PÁGINA CON SU NAVEGADOR -->
+
+
+
+
+
+	<!-- NAVEGADOR DEL CONTENIDO -->
+		<nav>
+			<ul>
+				<li id="tcontenidos"> Tabla de contenidos </li>
+				<li>
+
+					<a href="#Otros"> Tipos de procesadores </a>
+
+					<ul>
+						<li> <a href="#GPU"> <span lang="en"> GPU: Graphics Processing Unit </span> </a> </li>
+						<li> <a href="#ASIP"> <span lang="en"> ASIP: Application-Specific Instruction-set Processor </span> </a> </li>
+						<li> <a href="#PPU"> <span lang="en"> PPU: Physics Processing Unit </span> </a> </li>
+						<li> <a href="#DSP"> <span lang="en"> DSP: Digital Signal Processor </span> </a> </li>
+						<li> <a href="#Cuanticos"> Ordenadores cuánticos </a> </li>
+					</ul>
+
+				</li>
+			</ul>
+
+		</nav>
+	<!-- FIN NAVEGADOR DEL CONTENIDO -->
+
+
+
+
+
+	<!-- SECCIONES DE LA PÁGINA -->
+		<section>
+
+		<!-- OTROS -->
+			<h2>
+				Otros tipos de procesadores
+				<a id="Otros"></a>
+			</h2>
+
+			<p>
+				Hasta ahora nos hemos referido de manera indistinta a procesador o a CPU,
+				sin embargo, no son lo mismo desde un punto de vista técnico.
+			</p>
+
+			<p>
+				Técnicamente un procesador es un circuito electrónico integrado que realiza operaciones lógicas,
+				aritméticas y de entrada y salida. Bajo esta definición la CPU es solo uno de los procesadores que hay en un ordenador actual.
+				Es el procesador que se dedica a todas las labores generales que no tienen un procesador especializado.
+				Otro procesador que hay en todos los ordenadores es la GPU (<span lang="en">Graphics Processing Unit</span>).
+			</p>
+
+			<figure>
+				<img src="../../src/images/tipos_de_procesadores_1.jfif" alt="Imagen decorativa de una GPU" id="tipos_de_procesadores_1">
+				<figcaption> Una de las primeras apariciones de las GPUs fue en las máquinas de arcade. </figcaption>
+			</figure>
+
+
+			<!-- GPU -->
+			<h3>
+				<span lang="en"> Graphics Processing Unit </span> (GPU)
+				<a id="GPU"></a>
+			</h3>
+
+			<p>
+				Una GPU es un procesador paralelo que permite que los cálculos repetitivos de pintar la pantalla dentro de una aplicación
+				y el resto de procesos se ejecuten a la vez. Las GPUs fueron introducidas a finales del siglo pasado
+				para ayudar a las CPUs a mantener el ritmo, ya que a las CPUs les cuesta mucho calcular los gráficos
+				y esto producía tirones. Así se creó la GPU un procesador especializado en gráficos que permite la fluided
+				y cantidad de animaciones que tenemos hoy en día en nuestros ordenadores constantemente.
+			</p>
+
+			<p>
+				Actualmente podemos distinguir principalmente dos tipos de GPUs: las que están integradas en el mismo chip que
+				la CPU que son más baratas y menos potentes, y las “externas”. Estas últimas son un componente a parte del
+				ordenador que se conecta con el procesador a través de buses de la placa base, mientras que las integradas están
+				conectadas con la CPU de manera interna dentro del chip. Las GPUs externas son más potentes y son las que se usan
+				en el entrenamiento de inteligencias artificiales y en su ejecución, en edición de vídeo e imagen a nivel profesional,
+				en ordenadores preparados para videojuegos, incluso en ordenadores preparados para minar criptomonedas...
+			</p>
+
+			<figure>
+				<img src="../../src/images/gpu_1.jfif" alt="Imagen decorativa de una GPU" id="gpu_1">
+				<figcaption>
+					Las tarjetas gráficas externas se conectan a la placa base por PCI Express y
+					tienen su propia entrada de electricidad además de su propia memoria RAM (VRAM).
+				</figcaption>
+			</figure>
+
+			<p>
+				Sin embargo, esta distinción se está empezando a volver menos clara con la salida de los procesadores M1 Pro
+				y M1 Max de Apple que tienen una gráfica integrada dentro del mismo chip que el procesador y
+				aun así son capaces de realizar las mismas tareas y con la misma eficiencia que las gráficas externas más potentes del mercado.
+			</p>
+			<!-- FIN GPU -->
+
+
+			<!-- ASIP -->
+			<h3>
+				<span lang="en"> Application-Specific Instruction-set Processor </span> (ASIP)
+				<a id="ASIP"></a>
+			</h3>
+
+			<p>
+				Los procesadores ASIP son aquellos que han sido creados para realizar una única función.
+				Su circuito está especialmente diseñado para un único tipo de cálculos.
+				Por ejemplo, para minar BitCoins se han creado procesadores que son los más rápidos resolviendo
+				el problema requerido para minar un BitCoin. También los hay para procesamiento de audio que
+				podemos encontrar en chips de instrumentos eléctricos como teclados, amplificadores, mesas de mezclas...
+			</p>
+			<!-- FIN ASIP -->
+
+
+			<!-- PPU -->
+			<h3>
+				<span lang="en"> Physics Processing Unit </span> (PPU)
+				<a id="PPU"></a>
+			</h3>
+
+			<p>
+				Un PPU es un microprocesador diseñado para el cálculo de físicas,
+				especialmente para el motor de físicas de un videojuego.
+			</p>
+
+			<p>
+				Estos procesadores surgieron con la idea de tener procesadores especializados que realicen operaciones
+				que cuestan mucho para la CPU y así reducir su carga, es similar a la idea detrás de las GPUs
+				que realizan los cálculos gráficos para que la CPU no tenga que hacerlos.
+			</p>
+			<!-- FIN PPU -->
+
+
+			<!-- DSP -->
+			<h3>
+				<span lang="en"> Digital Signal Processor </span> (DSP)
+				<a id="DSP"></a>
+			</h3>
+
+			<p>
+				Un DSP es un microprocesador especializado, cuya arquitectura está optimizada para las necesidades
+				del procesamiento digital de señal. Son ampliamente usados en procesamiento de señales de audio,
+				telecomunicaciones, procesamiento digital de imágenes, radar, sonar y sistemas de reconocimiento de voz,
+				y en dispositivos que usamos a diario como los móviles, los discos duros y en televisiones de alta definición.
+			</p>
+
+			<figure>
+				<img src="../../src/images/ejemplo_de_uso_dsp.jfif" alt="Imagen de un dispositivo que usa un DSP" id="ejemplo_de_uso_dsp">
+				<figcaption> Este es un ejemplo de uso de los DSP </figcaption>
+			</figure>
+
+			<p>
+				Su función es normalmente medir, filtrar o comprimir señales analógicas continuas del mundo real.
+				Los procesadores de propósito general también son capaces de ejecutar algoritmos de procesamiento
+				de señal digital con éxito, pero muchas veces no son capaces de mantener el ritmo con procesamiento en tiempo real.
+				Además, los DSPs normalmente tienen una mejor eficiencia de consumo, por tanto son mejores
+				para dispositvos móviles porque en estos importa el consumo energético para una mayor duración de la batería.
+			</p>
+			<!-- FIN DSP -->
+
+
+			<!-- CUANTICOS -->
+			<h3>
+				Ordenadores cuánticos
+				<a id="Cuanticos"></a>
+			</h3>
+
+			<p>
+				Los ordenadores cuánticos son un nuevo paradigma a nivel tanto de software cómo de hardware.
+				Estos ordenadores no usan procesadores como los que hemos visto hasta ahora,
+				ya que usan procesadores que se aprovechan de las propiedades cuánticas de las partículas
+				y en vez de bits usan qubits. (quantum bits o bits cuánticos).
+			</p>
+
+			<figure>
+				<img src="../../src/images/ordenador_cuantico.jpeg" alt="Imagen de una parte de un ordenador cuántico" id="ordenador_cuantico">
+				<figcaption>
+					Si en un ordenador cuántico pasamos de trabajar con n cúbits a hacerlo con n+1 cúbits estaremos
+					duplicando la cantidad de estados en los que puede estar la máquina, que pasará de 2^n a 2^n+1.
+				</figcaption>
+			</figure>
+
+			<h4>
+				Todo lo que un Qubit puede Enseñarte sobre Física Cuántica <br>
+				de <a href="https://www.youtube.com/channel/UCbdSYaPD-lr1kW27UJuk8Pw" target="_blank" class="canal_de_youtube"> QuantumFracture </a>
+			</h4>
+
+			<iframe
+				src="https://www.youtube.com/embed/ilPfvMEOmCs"
+				title="YouTube video player"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen
+			>
+			</iframe>
+
+				<!-- VIDEOS -->
+			<h4>
+				¿Qué es y cómo funciona la COMPUTACIÓN CUÁNTICA? <br>
+				de <a href="https://www.youtube.com/channel/UCH-Z8ya93m7_RD02WsCSZYA" target="_blank" class="canal_de_youtube"> Derivando </a>
+			 </h4>
+
+			<iframe
+				src="https://www.youtube.com/embed/YpYuBEzfRlM"
+				title="YouTube video player"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen
+			>
+			</iframe>
+
+
+			<h4>
+				¿Qué son los ordenadores cuánticos? <br>
+				de <a href="https://www.youtube.com/channel/UCns-8DssCBba7M4nu7wk7Aw" target="_blank" class="canal_de_youtube"> Date un Voltio </a>
+			</h4>
+
+			<iframe
+				src="https://www.youtube.com/embed/035rUtCPKWU"
+				title="YouTube video player"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen
+			>
+			</iframe>
+				<!-- FIN VIDEOS -->
+			<!-- FIN CUANTICOS -->
+		<!-- FIN OTROS -->
+
+		</section>
+	<!-- FIN SECCIONES DE LA PÁGINA -->
+
+
+
+
+
+	<!-- PIE DE PÁGINA -->
+		<footer>
+			<address>
+				<p> Autores: Maria Bakaikoa, Daniel Argáiz, Adrián Baldellou </p>
+				<a href="mailto:maria.bakaikoa@alum.unirioja.es"> Contacto Maria Bakaikoa </a>
+				<a href="mailto:daniel.argaiz@alum.unirioja.es"> Contacto Daniel Argáiz </a>
+				<a href="mailto:adrian.baldellou@alum.unirioja.es"> Contacto Adrián Baldellou </a>
+			</address>
+
+			<div id="validaciones">
+				<img src="../../src/images/html5_icon.png" alt="Icono de validación de HTML 5" id="html5_icon">
+				<img src="../../src/images/css3_icon.gif" alt="Icono de validación de CSS 3" id="css3_icon">
+				<img src="../../src/images/wcag1AA.gif" alt="Icono de validación de accesibilidad WCAG 2.0 (level AA)" id="wcag1AA_icon">
+			</div>
+		</footer>
+	<!-- FIN PIE DE PÁGINA -->
+
+
+
+
+
+	<!-- JAVASCRIPT EXTERNO -->
+		<script src="src/javascript/interacciones.js"></script>
+
+	</body>
+</html>

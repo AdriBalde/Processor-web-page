@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+
+	<!-- METAS -->
+		<!-- charset -->
+		<meta charset="utf-8">
+
+		<!-- keywords -->
+		<meta name="keywords" content="Sistemas Informáticos, Grado en Ingeniería Informática,
+    Grado en Matemáticas, Universidad de La Rioja, Microprocesadores, CPU, Procesadores, Conexiones,
+		Maria Bakaikoa, Daniel Argáiz, Adrián Baldellou">
+
+		<!-- description -->
+		<meta name="description" content="En esta página puedes encontrar información acerca de las
+		conexiones de los procesadores (UCP) o CPUs con el resto de componentes de un ordenador.">
+
+		<!-- autores -->
+		<meta name="Author" content="Maria Bakaikoa, Daniel Argáiz, Adrián Baldellou">
+
+		<!-- viewport para los css que usen @media -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<!-- HOJAS CSS EXTERNAS -->
+		<link rel="stylesheet" type="text/css" href="../../src/css/layout.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/backgrouds.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/text.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/media.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/animaciones.css">
+
+	<!-- TITLE -->
+		<title> Conexiones (CPU) - Unirioja </title>
+
+	</head>
+
+
+
+
+
+	<body>
+
+	<!-- CABECERA DE LA PÁGINA CON SU NAVEGADOR -->
+		<header>
+
+			<!-- ICONO DE LA PÁGINA QUE AL CLICKARLO TE LLEVA AL INICIO -->
+			<div id="icono_cabecera">
+				<a href="Procesador.html">
+					<img src="../../src/images/icono_cabecera.png" alt="Logo de la página">
+					<h1>
+						 		    <span>E</span><!--
+			           --><span>l</span><!--
+			           --><span> </span><!--
+			           --><span>P</span><!--
+			           --><span>r</span><!--
+			           --><span>o</span><!--
+			           --><span>c</span><!--
+			           --><span>e</span><!--
+			           --><span>s</span><!--
+			           --><span>a</span><!--
+			           --><span>d</span><!--
+			           --><span>o</span><!--
+			           --><span>r</span>
+					</h1>
+				</a>
+			</div>
+			<!-- FIN ICONO DE LA PÁGINA QUE AL CLICKARLO TE LLEVA AL INICIO -->
+
+
+
+			<!-- NAVEGADOR PRINCIPAL DE LA PÁGINA -->
+			<nav id="navpricipal">
+				<ul>
+					<li>   <a href="Procesador.html"> Procesador </a>   </li>
+					<li id="Arquitectura">
+						<a href="Arquitectura.html"> Arquitectura <span class="simbolo fa fa-angle-down"></span><span class="simbolo fa fa-angle-up"></span> </a>
+						<ul>
+							<li>   <a href="UnidaddeControl.html"> Unidad de control </a>   </li>
+							<li>   <a href="UnidadAritmeticoLogica.html"> Unidad aritmético lógica </a>   </li>
+							<li>   <a href="Cache.html"> Caché </a>   </li>
+							<li>   <a href="Registros.html"> Registros </a>   </li>
+						</ul>
+					</li>
+					<li>   <a href="Conexiones.html"> Conexiones </a>   </li>
+					<li>   <a href="Tipos.html"> Tipos </a>   </li>
+				</ul>
+			</nav>
+			<!-- FIN NAVEGADOR PRINCIPAL DE LA PÁGINA -->
+
+
+
+			<!-- BOTON PARA CAMBIAR EL IDIOMA -->
+			<div id="idioma">
+				<a href="">ES</a>
+				<span id="es|en"> | </span>
+				<a href="../en/Connections.html">EN</a>
+			</div>
+			<!-- FIN BOTON PARA CAMBIAR EL IDIOMA -->
+		</header>
+	<!-- FIN CABECERA DE LA PÁGINA CON SU NAVEGADOR -->
+
+
+
+
+
+	<!-- NAVEGADOR DEL CONTENIDO -->
+		<nav>
+			<ul>
+				<li id="tcontenidos"> Tabla de contenidos </li>
+				<li>
+
+					<a href="#definicion">¿Qué son las conexiones con el exterior?</a>
+
+				</li>
+				<li>
+
+					<a href="#Buses">Buses del procesador  </a>
+
+					<ul>
+						<li> <a href="#BDatos">Buses de datos  </a> </li>
+						<li> <a href="#BDireccion">Buses de dirección  </a> </li>
+						<li> <a href="#BControl">Buses de control  </a> </li>
+					</ul>
+
+				</li>
+			</ul>
+
+		</nav>
+	<!-- FIN NAVEGADOR DEL CONTENIDO -->
+
+
+
+
+
+	<!-- SECCIONES DE LA PÁGINA -->
+		<section>
+
+		<!-- DEFINICION -->
+			<h2>
+				Qué son las conexiones con el exterior?
+				<a id="Definicion"></a>
+			</h2>
+
+			<p>
+				El microprocesador posee un arreglo de elementos metálicos que permiten
+				la conexión eléctrica entre el circuito integrado que conforma el microprocesador
+				y los circuitos de la placa base. Dependiendo de la complejidad y de la potencia,
+				un procesador puede tener desde 8 hasta más de 2000 elementos metálicos en
+				la superficie de su empaque. El montaje del procesador se realiza con la
+				ayuda de un zócalo de CPU soldado sobre la placa base. Generalmente distinguimos tres tipos de conexión:
+			</p>
+
+			<ul>
+				<li>
+					<span class="negrita">PGA<span lang="en">(Pin Grid Array):</span></span> La conexión se realiza mediante
+					pequeños alambres metálicos repartidos a lo largo de la base del procesador
+					introduciéndose en la placa base mediante unos pequeños agujeros,
+					al introducir el procesador, una palanca anclará los pines para que haga buen contacto y no se suelten.
+				</li>
+
+				<li>
+					<span class="negrita">BGA<span lang="en">(Ball Grid Array):</span></span> La conexión se realiza mediante
+					bolas soldadas al procesador que hacen contacto con el zócalo
+				</li>
+
+				<li>
+					<span class="negrita">LGA<span lang="en">(Land Grid Array):</span></span> La conexión se realiza mediante
+					superficies de contacto lisas con pequeños pines que incluye la placa base.
+				</li>
+			</ul>
+		<!-- FIN DEFINICION -->
+
+
+
+
+		<!-- BUSES -->
+			<h2>
+				Buses del procesador
+				<a id="Buses"></a>
+			</h2>
+
+			<p>
+				Todos los procesadores poseen un bus principal o de sistema por el cual
+				se envían y reciben todos los datos, instrucciones y direcciones desde
+				los integrados del chipset o desde el resto de dispositivos. Como puente
+				de conexión entre el procesador y el resto del sistema, define mucho
+				del rendimiento del sistema, su velocidad se mide en bits por segundo.
+			</p>
+
+			<p> Hay 3 tipos de buses del procesador: </p>
+
+
+			<!-- DATOS -->
+			<h3>
+				Buses de Datos
+				<a id="BDatos"></a>
+			</h3>
+
+			<p>
+				Transporta los datos que se transfieren entre unidades. Suele ser bidireccional,
+				es decir, se utilizan los mismos hilos para transmitir información hacia adentro
+				o hacia afuera de una unidad, pero siempre en momentos diferentes.
+				Conviene matizar la diferencia entre el bus de datos interno y el bus de datos externo:
+				El bus de datos interno se utiliza para transferir datos entre los elementos
+				de la computadora central (formada por la CPU junto con la memoria principal).
+				Por otro lado, los buses de datos externos se considera una prolongación
+				del interno ya que pone en comunicación el procesador con el resto de las unidades.
+			</p>
+			<!-- FIN DATOS -->
+
+
+			<!-- DIRECCIONES -->
+			<h3>
+				Buses de Direcciones
+				<a id="BDireccion"></a>
+			</h3>
+
+			<p>
+				Transporta la dirección de la posición de la memoria o del periférico
+				que interviene en el tráfico de información. Permite la comunicación
+				entre el procesador y las celdas de memoria RAM. Cuando el procesador
+				quiere leer el contenido de una celda de memoria, envía por el bus de
+				direcciones la dirección de la celda que quiere leer, recibiendo por
+				el bus de datos el contenido de la misma. EL tamaño de este bus define
+				la cantidad de memoria RAM que la CPU puede gestionar.
+			</p>
+			<!-- FIN DIRECCIONES -->
+
+
+			<!-- CONTROL -->
+			<h3>
+				Buses de Control
+				<a id="BControl"></a>
+			</h3>
+
+			<p>
+				Este conjunto de señales se usa para sincronizar las actividades y
+				transacciones con los periféricos del sistema. Algunas de estas señales,
+				como R / W, son señales que la CPU envía para indicar que tipo de operación
+				se espera en ese momento. Los periféricos también pueden remitir señales
+				de control a la CPU, como son INT, RESET, BUS RQ. Las señales más
+				importantes en el bus de control son las señales de cronómetro, que
+				generan los intervalos de tiempo durante los cuales se realizan las operaciones.
+				Este tipo de señales depende directamente del tipo del microprocesador.
+			</p>
+			<!-- FIN CONTROL -->
+		<!-- FIN BUSES -->
+
+		</section>
+	<!-- FIN SECCIONES DE LA PÁGINA -->
+
+
+
+
+
+	<!-- PIE DE PÁGINA -->
+		<footer>
+			<address>
+				<p> Autores: Maria Bakaikoa, Daniel Argáiz, Adrián Baldellou </p>
+				<a href="mailto:maria.bakaikoa@alum.unirioja.es"> Contacto Maria Bakaikoa </a>
+				<a href="mailto:daniel.argaiz@alum.unirioja.es"> Contacto Daniel Argáiz </a>
+				<a href="mailto:adrian.baldellou@alum.unirioja.es"> Contacto Adrián Baldellou </a>
+			</address>
+
+			<div id="validaciones">
+				<img src="../../src/images/html5_icon.png" alt="Icono de validación de HTML 5" id="html5_icon">
+				<img src="../../src/images/css3_icon.gif" alt="Icono de validación de CSS 3" id="css3_icon">
+				<img src="../../src/images/wcag1AA.gif" alt="Icono de validación de accesibilidad WCAG 2.0 (level AA)" id="wcag1AA_icon">
+			</div>
+		</footer>
+	<!-- FIN PIE DE PÁGINA -->
+
+
+
+
+
+	<!-- JAVASCRIPT EXTERNO -->
+		<script src="src/javascript/interacciones.js"></script>
+
+	</body>
+</html>

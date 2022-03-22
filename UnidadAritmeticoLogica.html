@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+
+	<!-- METAS -->
+		<!-- charset -->
+		<meta charset="utf-8">
+
+		<!-- keywords -->
+		<meta name="keywords" content="Sistemas Informáticos, Grado en Ingeniería Informática,
+    Grado en Matemáticas, Universidad de La Rioja, Microprocesadores, CPU, Procesadores, ALU, Arithmetic Logic Unit, Unidad Aritmético Lógica,
+		Maria Bakaikoa, Daniel Argáiz, Adrián Baldellou">
+
+		<!-- description -->
+		<meta name="description" content="En esta página puedes encontrar información acerca de la unidad aritmetico logica o ALU.">
+
+		<!-- autores -->
+		<meta name="Author" content="Maria Bakaikoa, Daniel Argáiz, Adrián Baldellou">
+
+		<!-- viewport para los css que usen @media -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<!-- HOJAS CSS EXTERNAS -->
+		<link rel="stylesheet" type="text/css" href="../../src/css/layout.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/backgrouds.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/text.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/media.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/animaciones.css">
+
+	<!-- TITLE -->
+		<title> Unidad Aritmetico-Logica (CPU) - Unirioja </title>
+
+	</head>
+
+
+
+
+
+	<body>
+
+	<!-- CABECERA DE LA PÁGINA CON SU NAVEGADOR -->
+		<header>
+
+			<!-- ICONO DE LA PÁGINA QUE AL CLICKARLO TE LLEVA AL INICIO -->
+			<div id="icono_cabecera">
+				<a href="Procesador.html">
+					<img src="../../src/images/icono_cabecera.png" alt="Logo de la página">
+					<h1>
+						   <span>E</span><!--
+            --><span>l</span><!--
+            --><span> </span><!--
+            --><span>P</span><!--
+            --><span>r</span><!--
+            --><span>o</span><!--
+            --><span>c</span><!--
+            --><span>e</span><!--
+            --><span>s</span><!--
+            --><span>a</span><!--
+            --><span>d</span><!--
+            --><span>o</span><!--
+            --><span>r</span>
+					</h1>
+				</a>
+			</div>
+			<!-- FIN ICONO DE LA PÁGINA QUE AL CLICKARLO TE LLEVA AL INICIO -->
+
+
+
+			<!-- NAVEGADOR PRINCIPAL DE LA PÁGINA -->
+			<nav id="navpricipal">
+				<ul>
+					<li>   <a href="Procesador.html"> Procesador </a>   </li>
+					<li id="Arquitectura">
+						<a href="Arquitectura.html"> Arquitectura <span class="simbolo fa fa-angle-down"></span><span class="simbolo fa fa-angle-up"></span> </a>
+						<ul>
+							<li>   <a href="UnidaddeControl.html"> Unidad de control </a>   </li>
+							<li>   <a href="UnidadAritmeticoLogica.html"> Unidad aritmético lógica </a>   </li>
+							<li>   <a href="Cache.html"> Caché </a>   </li>
+							<li>   <a href="Registros.html"> Registros </a>   </li>
+						</ul>
+					</li>
+					<li>   <a href="Conexiones.html"> Conexiones </a>   </li>
+					<li>   <a href="Tipos.html"> Tipos </a>   </li>
+				</ul>
+			</nav>
+			<!-- FIN NAVEGADOR PRINCIPAL DE LA PÁGINA -->
+
+
+
+			<!-- BOTON PARA CAMBIAR EL IDIOMA -->
+			<div id="idioma">
+				<a href="">ES</a>
+				<span id="es|en"> | </span>
+				<a href="../en/ArithmeticLogicUnit.html">EN</a>
+			</div>
+			<!-- FIN BOTON PARA CAMBIAR EL IDIOMA -->
+		</header>
+	<!-- FIN CABECERA DE LA PÁGINA CON SU NAVEGADOR -->
+
+
+
+
+
+	<!-- NAVEGADOR DEL CONTENIDO -->
+		<nav>
+			<ul>
+				<li id="tcontenidos"> Tabla de contenidos </li>
+				<li>
+
+					<a href="#Definicion">¿Qué es la ALU?</a>
+
+					<ul>
+						<li> <a href="#Donde">Dónde se encuentra  </a> </li>
+						<li> <a href="#Componentes">Componentes  </a> </li>
+					</ul>
+
+				</li>
+				<li><a href="#Funcionamiento">Funcionamiento</a></li>
+				<li><a href="#Operaciones">Explicación de las operaciones lógicas</a></li>
+			</ul>
+
+		</nav>
+	<!-- FIN NAVEGADOR DEL CONTENIDO -->
+
+
+
+
+
+	<!-- SECCIONES DE LA PÁGINA -->
+		<section>
+
+		<!-- DEFINICION -->
+			<h2>
+				¿Qué es la ALU?
+				<a id="Definicion"></a>
+			</h2>
+
+			<p>
+				Una unidad aritmética lógica (ALU) es un circuito digital que se utiliza
+				para realizar operaciones aritméticas y lógicas. Algunos ejemplos de
+				operaciones aritméticas son la suma, la resta, la multiplicación y la división;
+				y ejemplos de operaciones  son las comparaciones de valores como NOT, AND y OR.
+				Además de los operadores lógicos y aritméticos, la ALU cuenta con una serie de
+				registros para almacenar los datos, y bits de información sobre los resultados, también llamados banderas.
+			</p>
+
+			<figure>
+				<img src="../../src/images/EsquemaALU.png" alt="Esquema de la ALU" id="EsquemaALU">
+			</figure>
+
+
+			<!-- DONDE -->
+			<h3>
+				Donde se encuentra
+				<a id="Donde"></a>
+			</h3>
+
+			<p>
+				Esta unidad representa el bloque de construcción fundamental de la unidad central
+				de procesamiento (CPU) de una computadora. Las CPU modernas contienen ALU muy potentes
+				y complejas. Además de las ALU, las CPU modernas también contienen una unidad de  control (CU).
+			</p>
+
+			<p>
+				A parte de la CPU, una ALU puede encontrarse en todo tipo de circuitos y
+				dispositivos electrónicos. Por ejemplo, en un reloj de pulsera digital
+				que permite la adición de un segundo en forma constante. Otros ejemplos
+				se encuentran en tarjetas gráficas, de sonido o video, equipos de TV de alta definición, y lectoras de CD.
+			</p>
+			<!-- FIN DONDE -->
+
+
+			<!-- COMPONENTES -->
+			<h3>
+				Componentes
+				<a id="Componentes"></a>
+			</h3>
+
+			<p>
+				Es en estos pequeños y complejos dispositivos que encontramos los siguientes componentes:
+			</p>
+
+			<ul>
+				<li><span class="negrita">Dispositivos de Adición:</span> Se encargan de realizar las anteriormente mencionadas operaciones aritméticas.  </li>
+				<li><span class="negrita">Registros:</span> Son los que contienen los Operandos que permiten realizar las operaciones, siendo aportados estos por la Unidad de Control. </li>
+				<li><span class="negrita">Resultados Finales:</span> Resultados propiamente dichos de los cálculos efectuados.</li>
+				<li><span class="negrita">Resultados Parciales:</span> Fragmentos de cálculos que fueron realizados.  </li>
+				<li><span class="negrita">Control de Cálculo:</span> Dispositivo que se encarga de controlar, redirigir y corregir los errores que se puedan haber cometido en las operaciones realizadas. </li>
+			</ul>
+			<!-- FIN COMPONENTES -->
+		<!--FIN DEFINICION -->
+
+
+
+
+		<!-- FUNCIONAMIENTO -->
+			<h2>
+				Funcionamiento
+				<a id="Funcionamiento"></a>
+			</h2>
+
+			<p>
+				Anteriormente hemos mencionado la Unidad de Control, y debemos definirla
+				como un dispositivo que se encarga de envíar a la ALU todas las órdenes
+				y operaciones que debe realizar, además de transportar los resultados
+				finales que ha obtenido hacia otros componentes
+			</p>
+
+			<p>
+				De este modo, podemos definir el funcionamiento de la siguiente manera:
+				La unidad de control emite las acciones que deben efectuarse.
+				Después, la unidad aritmético lógica procesa los datos que ha recibido
+				y por último la unidad de control analiza los resultados que ha obtenido
+				y los envía a otros dispositivos.
+			</p>
+		<!-- FIN FUNCIONAMIENTO -->
+
+
+
+
+		<!-- OPERACIONES -->
+			<h2>
+				Explicación de las operaciones
+				<a id="Operaciones"></a>
+			</h2>
+
+			<p>
+				Para realizar las operaciones aritméticas y lógicas dos números enteros
+				en forma de bits se aplican a la entrada de la ALU y otro terminal recibe
+				las instrucciones para manipular dicha entrada. Estas instrucciones,
+				como el nombre de unidades lo indica, son cálculos matemáticos tales como la suma.
+				Una vez que la ALU ha realizado las operaciones ordenadas, emite el valor del resultado.
+			</p>
+		<!-- FIN OPERACIONES -->
+
+		</section>
+	<!-- FIN SECCIONES DE LA PÁGINA -->
+
+
+
+
+
+	<!-- PIE DE PÁGINA -->
+		<footer>
+			<address>
+				<p> Autores: Maria Bakaikoa, Daniel Argáiz, Adrián Baldellou </p>
+				<a href="mailto:maria.bakaikoa@alum.unirioja.es"> Contacto Maria Bakaikoa </a>
+				<a href="mailto:daniel.argaiz@alum.unirioja.es"> Contacto Daniel Argáiz </a>
+				<a href="mailto:adrian.baldellou@alum.unirioja.es"> Contacto Adrián Baldellou </a>
+			</address>
+
+			<div id="validaciones">
+				<img src="../../src/images/html5_icon.png" alt="Icono de validación de HTML 5" id="html5_icon">
+				<img src="../../src/images/css3_icon.gif" alt="Icono de validación de CSS 3" id="css3_icon">
+				<img src="../../src/images/wcag1AA.gif" alt="Icono de validación de accesibilidad WCAG 2.0 (level AA)" id="wcag1AA_icon">
+			</div>
+		</footer>
+	<!-- FIN PIE DE PÁGINA -->
+
+
+
+
+
+	<!-- JAVASCRIPT EXTERNO -->
+		<script src="src/javascript/interacciones.js"></script>
+
+	</body>
+</html>

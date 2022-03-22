@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+
+	<!-- METAS -->
+		<!-- charset -->
+		<meta charset="utf-8">
+
+		<!-- keywords -->
+		<meta name="keywords" content="Sistemas Informáticos, Grado en Ingeniería Informática,
+    Grado en Matemáticas, Universidad de La Rioja, Microprocesadores, CPU, Procesadores, Unidad de Control,
+		Maria Bakaikoa, Daniel Argáiz, Adrián Baldellou">
+
+		<!-- description -->
+		<meta name="description" content="En esta página puedes encontrar información acerca de los
+		la Unidad de Control (CU) de los procesadores">
+
+		<!-- autores -->
+		<meta name="Author" content="Maria Bakaikoa, Daniel Argáiz, Adrián Baldellou">
+
+		<!-- viewport para los css que usen @media -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<!-- HOJAS CSS EXTERNAS -->
+		<link rel="stylesheet" type="text/css" href="../../src/css/layout.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/backgrouds.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/text.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/media.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/animaciones.css">
+
+	<!-- TITLE -->
+		<title> Unidad de control (CU) - Unirioja </title>
+
+	</head>
+
+
+
+
+
+	<body>
+
+	<!-- CABECERA DE LA PÁGINA CON SU NAVEGADOR -->
+		<header>
+
+			<!-- ICONO DE LA PÁGINA QUE AL CLICKARLO TE LLEVA AL INICIO -->
+			<div id="icono_cabecera">
+				<a href="Procesador.html">
+					<img src="../../src/images/icono_cabecera.png" alt="Logo de la página">
+					<h1>
+						    <span>E</span><!--
+	           --><span>l</span><!--
+	           --><span> </span><!--
+	           --><span>P</span><!--
+	           --><span>r</span><!--
+	           --><span>o</span><!--
+	           --><span>c</span><!--
+	           --><span>e</span><!--
+	           --><span>s</span><!--
+	           --><span>a</span><!--
+	           --><span>d</span><!--
+	           --><span>o</span><!--
+	           --><span>r</span>
+					</h1>
+				</a>
+			</div>
+			<!-- FIN ICONO DE LA PÁGINA QUE AL CLICKARLO TE LLEVA AL INICIO -->
+
+
+
+			<!-- NAVEGADOR PRINCIPAL DE LA PÁGINA -->
+			<nav id="navpricipal">
+				<ul>
+					<li>   <a href="Procesador.html"> Procesador </a>   </li>
+					<li id="Arquitectura">
+						<a href="Arquitectura.html"> Arquitectura <span class="simbolo fa fa-angle-down"></span><span class="simbolo fa fa-angle-up"></span> </a>
+						<ul>
+							<li>   <a href="UnidaddeControl.html"> Unidad de control </a>   </li>
+							<li>   <a href="UnidadAritmeticoLogica.html"> Unidad aritmético lógica </a>   </li>
+							<li>   <a href="Cache.html"> Caché </a>   </li>
+							<li>   <a href="Registros.html"> Registros </a>   </li>
+						</ul>
+					</li>
+					<li>   <a href="Conexiones.html"> Conexiones </a>   </li>
+					<li>   <a href="Tipos.html"> Tipos </a>   </li>
+				</ul>
+			</nav>
+			<!-- FIN NAVEGADOR PRINCIPAL DE LA PÁGINA -->
+
+
+
+			<!-- BOTON PARA CAMBIAR EL IDIOMA -->
+			<div id="idioma">
+				<a href="">ES</a>
+				<span id="es|en"> | </span>
+				<a href="../en/ControlUnit.html">EN</a>
+			</div>
+			<!-- FIN BOTON PARA CAMBIAR EL IDIOMA -->
+		</header>
+	<!-- FIN CABECERA DE LA PÁGINA CON SU NAVEGADOR -->
+
+
+
+
+
+	<!-- NAVEGADOR DEL CONTENIDO -->
+		<nav>
+			<ul>
+				<li id="tcontenidos"> Tabla de contenidos </li>
+				<li>
+
+					<a href="#Definicion"> ¿Qué es la unidad de control? </a>
+
+					<ul>
+						<li> <a href="#Operaciones"> Operaciones que realiza </a> </li>
+					</ul>
+
+				</li>
+				<li>
+
+					<a href="#Componentes"> Componentes de la CU </a>
+
+					<ul>
+						<li> <a href="#RE"> Registro de instrucciones </a> </li>
+						<li> <a href="#RP"> Recuento de programa </a> </li>
+						<li> <a href="#CD"> Controlador y decodificador </a> </li>
+						<li> <a href="#SEC"> Secuenciador </a> </li>
+						<li> <a href="#REJ"> Reloj </a> </li>
+						<li> <a href="#MUL"> Multiplex </a> </li>
+					</ul>
+
+				</li>
+
+				<li>
+
+					<a href="#CU"> Tipos de CU </a>
+
+					<ul>
+						<li> <a href="#UCCableadas"> UC Cableadas </a> </li>
+						<li> <a href="#UCmicroprogramadas"> UC microprogramadas </a> </li>
+					</ul>
+				</li>
+			</ul>
+
+		</nav>
+	<!-- FIN NAVEGADOR DEL CONTENIDO -->
+
+
+
+
+
+	<!-- SECCIONES DE LA PÁGINA -->
+		<section>
+
+		<!-- DEFINICION -->
+			<h2>
+				¿Qué es la Unidad de control?
+				<a id="Definicion"></a>
+			</h2>
+
+			<p>
+				La unidad de control (UC), en inglés: control unit (CU),
+				es uno de los tres bloques funcionales principales en los que se divide una unidad central de procesamiento (CPU).
+				Los otros dos bloques son la unidad de proceso y el bus de entrada/salida.
+				Su funcionamiento es básicamente buscar las instrucciones, en la memoria principal,
+				posteriormente “interpretarlas”(decodificarlas), y ejecutarlas, utilizando la unidad de proceso.
+			</p>
+
+			<p>
+				Existen dos tipos de unidad de control:
+			</p>
+
+			<ul>
+				<li><span class="negrita">Las cableadas:</span> usadas generalmente en máquinas sencillas</li>
+				<li><span class="negrita">Las microprogramadas:</span> propias de máquinas más complejas</li>
+			</ul>
+
+			<figure>
+				<img src="../../src/images/CU_1.jfif" alt="Imagen de una unidad de control" id="CU_1">
+				<figcaption> Esquema sobre la unidad de control </figcaption>
+			</figure>
+
+			<p>
+				En el primer caso, los componentes principales son el circuito de lógica secuencial,
+				el de control de estado, el de lógica combinacional y
+				el de emisión de reconocimiento de señales de control.
+				En el segundo caso, la microprogramación de la UC se encuentra almacenada en una micromemoria,
+				a la cual se accede de manera secuencial para
+				posteriormente ir ejecutando cada una de las microinstrucciones.
+			</p>
+
+
+			<!-- Unidad de control, basico -->
+			<h3>
+				Operaciones que realiza
+				<a id="Operaciones"></a>
+			</h3>
+
+			<p>
+				A grandes rasgos, realiza este ciclo de funciones:
+			</p>
+
+			<ul>
+				<li><span class="negrita">Fetch:</span> lee las instrucciones  que hay en la memoria</li>
+				<li><span class="negrita">Decode:</span> Decodificar las instrucciones, y las direcciones de la memori implicadas (si es necesario)</li>
+				<li><span class="negrita">Execute:</span> Ejecutar las instrucciones que marca el programa (enviando las órdenes al resto de las partes del procesador)</li>
+			</ul>
+
+			<p>
+				Pero pasando a un análisis más detallado,
+				Las funciones realizadas por la unidad de control varían grandemente por
+				la arquitectura interna del procesador, pues la unidad de control realmente implementa esta arquitectura.
+				En un procesador regular que ejecuta nativamente las instrucciones x86,
+				la unidad de control realiza las tareas de leer (fetch), decodificar,
+				manejo de la ejecución y almacenamiento de los resultados.
+				En un procesador x86 con un núcleo RISC, la unidad de control tiene
+				considerablemente más trabajo que hacer.Ella maneja la traducción de las
+				instrucciones x86 a las microinstrucciones del RISC, maneja la planificación
+				de las microinstrucciones entre las varias unidades de ejecución, y maneja
+				la salida de estas unidades para cerciorarse de que terminen donde supuestamente deben ir.
+				En uno de estos procesadores la unidad de control está dividida en otras
+				unidades debido a la complejidad del trabajo que debe realizar (tales como
+				una unidad de planificación para manejar la planificación y una unidad de
+				retiro para ocuparse de los resultados que vienen de la tubería o pipe).
+				Almacena los datos más utilizados de modo que se buscan primero en la computadora y luego en la RAM.
+			</p>
+			<!-- FIN Base de la Unidad de Control -->
+		<!-- FIN DEFINICIÓN -->
+
+
+
+
+		<!-- Componentes de la Unidad de control -->
+			<h2>
+				Componentes de la Unidad de control
+				<a id="Componentes"></a>
+			</h2>
+
+			<p>
+				A continuacion se pudes leer los componentes de la Unidad de Control:</p>
+
+				<ul>
+						<li> <a id="RE"> <span class="negrita">Registro de instrucción:</span> es el encargado de almacenar la instrucción que se está ejecutando. </a> </li>
+						<li> <a id="RP"> <span class="negrita">Recuento de programa:</span> registro que contiene la dirección de memoria de la siguiente instrucción a ejecutar. </a> </li>
+						<li> <a id="CD"> <span class="negrita">Controlador y decodificador:</span> se encarga de interpretar la instrucción para su posterior proceso. Es el encargado de extraer el código de operación de la instrucción en curso. </a> </li>
+						<li> <a id="SEC"> <span class="negrita">Secuenciador:</span> genera micro órdenes necesarias para ejecutar la instrucción. </a> </li>
+						<li> <a id="REJ"> <span class="negrita">Reloj:</span> proporciona una sucesión de impulsos eléctricos a intervalos constantes. </a> </li>
+						<li> <a id="MUL"> <span class="negrita">Multiplex:</span> Selecciona entre varios inputs y redirige la selección.</a> </li>
+				</ul>
+
+
+			<figure>
+				<img src="../../src/images/Componentes_CU.png" alt="Imagen de los componentes de la CU" id="Componetes_CU">
+				<figcaption> Imagenes relacionadas con el tema </figcaption>
+			</figure>
+
+
+			<!-- CU -->
+			<h3>
+				Tipos de CU
+				<a id="CU"></a>
+			</h3>
+
+			<p>
+				Principalmente tenemos dos tipos de unidades de control, la cableada y la microprogramada:
+			</p>
+
+			<ul>
+				<li>
+					<a id="UCCableadas">
+						Las unidades de control cableadas se utilizan en procesadores muy simples,
+						ya que en ellas la tabla de registros e instrucciones no se puede cambiar
+						al encontrarse todos los caminos de datos cableados previamente de manera
+						fija, en una unidad de control cableada las instrucciones van a tener
+						siempre el mismo rendimiento y no se van a poder añadir de nuevas ni optimizar su funcionamiento.
+					</a>
+				</li>
+
+				<li>
+					<a id="UCmicroprogramadas">
+						En el caso de las unidades de control microprogramadas se utiliza un
+						procesador que se encarga de realizar todas las funciones de la unidad
+						de control, esto permite optimizar la forma en la que las instrucciones
+						se van a ejecutar e incluso añadir nuevas instrucciones.
+					</a>
+				</li>
+			</ul>
+
+			<p>
+				Debido a la complejidad de la unidad de control microprogramada, estas
+				realizan la decodificación de las instrucciones de manera mucho más lenta,
+				es por ello que según el tipo de instrucción se hace uso de un tipo de
+				unidad de control o de otro a la hora de tratar cada una de las instrucciones.
+				Las unidades microprogramadas suelen estar compuestas por un microcontrolador
+				dentro del procesador. Su principal ventaja es que el fabricante puede optimizar
+				cómo se capta y decodifica cada instrucción o incluso hacer cambios si hay
+				un error de seguridad en la forma de ejecutar ciertas instrucciones.
+				Esto es clave para cuando hay amenazas graves que pueden aprovechar los
+				puntos débiles de la CPU como lo que ocurrió con Spectre y Meltdown.
+			</p>
+			<!-- FIN CU -->
+		<!-- FIN COMPONENTES -->
+
+		</section>
+
+
+
+
+
+	<!-- PIE DE PÁGINA -->
+		<footer>
+			<address>
+				<p> Autores: Maria Bakaikoa, Daniel Argáiz, Adrián Baldellou </p>
+				<a href="mailto:maria.bakaikoa@alum.unirioja.es"> Contacto Maria Bakaikoa </a>
+				<a href="mailto:daniel.argaiz@alum.unirioja.es"> Contacto Daniel Argáiz </a>
+				<a href="mailto:adrian.baldellou@alum.unirioja.es"> Contacto Adrián Baldellou </a>
+			</address>
+
+			<div id="validaciones">
+				<img src="../../src/images/html5_icon.png" alt="Icono de validación de HTML 5" id="html5_icon">
+				<img src="../../src/images/css3_icon.gif" alt="Icono de validación de CSS 3" id="css3_icon">
+				<img src="../../src/images/wcag1AA.gif" alt="Icono de validación de accesibilidad WCAG 2.0 (level AA)" id="wcag1AA_icon">
+			</div>
+		</footer>
+	<!-- FIN PIE DE PÁGINA -->
+
+
+
+
+
+	<!-- JAVASCRIPT EXTERNO -->
+	<!-- CAMBIAR SRC DEPENDIENDO DE LA PAGINA -->
+		<script src="src/javascript/interacciones.js"></script>
+
+	</body>
+</html>

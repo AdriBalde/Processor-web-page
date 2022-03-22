@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+	<!-- METAS -->
+		<!-- charset -->
+		<meta charset="utf-8">
+
+		<!-- keywords -->
+		<meta name="keywords" content="Computer Science, Computer Science Engineering Degree,
+    Mathematics Degree, Rioja's University, Microprocessors, CPU, Processors, Types of processors,
+		Maria Bakaikoa, Daniel Argáiz, Adrián Baldellou">
+
+		<!-- description -->
+		<meta name="description" content="On this page you can find information about the
+		types of processors. About graphics cards (GPUs), specialized processors (ASIP),
+		physics processors (PPU) and some more.">
+
+		<!-- autores -->
+		<meta name="Author" content="Maria Bakaikoa, Daniel Argáiz, Adrián Baldellou">
+
+		<!-- viewport para los css que usen @media -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<!-- HOJAS CSS EXTERNAS -->
+		<link rel="stylesheet" type="text/css" href="../../src/css/layout.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/backgrouds.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/text.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/media.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/animaciones.css">
+
+	<!-- TITLE -->
+		<title> Types (CPU) - Unirioja </title>
+
+	</head>
+
+
+
+
+
+	<body>
+
+	<!-- CABECERA DE LA PÁGINA CON SU NAVEGADOR -->
+		<header>
+
+			<!-- ICONO DE LA PÁGINA QUE AL CLICKARLO TE LLEVA AL INICIO -->
+			<div id="icono_cabecera">
+				<a href="Processor.html">
+					<img src="../../src/images/icono_cabecera.png" alt="Web page logo">
+					<h1>
+						   <span>T</span><!-- A
+            --><span>h</span><!-- N
+            --><span>e</span><!-- I
+            --><span> </span><!-- M
+            --><span>P</span><!-- A
+            --><span>r</span><!-- C
+            --><span>o</span><!-- I
+            --><span>c</span><!-- Ó
+            --><span>e</span><!-- N
+            --><span>s</span><!--
+            --><span>s</span><!--
+            --><span>o</span><!--
+            --><span>r</span>
+					</h1>
+				</a>
+			</div>
+			<!-- FIN ICONO DE LA PÁGINA QUE AL CLICKARLO TE LLEVA AL INICIO -->
+
+
+
+			<!-- NAVEGADOR PRINCIPAL DE LA PÁGINA -->
+			<nav id="navpricipal">
+				<ul>
+					<li>   <a href="Processor.html"> Processor </a>   </li>
+					<li id="Arquitectura">
+						<a href="Architecture.html"> Architecture <span class="simbolo fa fa-angle-down"></span> <span class="simbolo fa fa-angle-up"></span>  </a>
+						<ul>
+							<li>   <a href="ControlUnit.html"> Control Unit </a>   </li>
+							<li>   <a href="ArithmeticLogicUnit.html"> Arithmetic-Logic Unit </a>   </li>
+							<li>   <a href="Cache.html"> Cache </a>   </li>
+							<li>   <a href="Registers.html"> Registers </a>   </li>
+						</ul>
+					</li>
+					<li>   <a href="Connections.html"> Connections </a>   </li>
+					<li>   <a href="Types.html"> Types </a>   </li>
+				</ul>
+			</nav>
+			<!-- FIN NAVEGADOR PRINCIPAL DE LA PÁGINA -->
+
+
+
+			<!-- BOTON PARA CAMBIAR EL IDIOMA -->
+			<div id="idioma">
+				<a href="../es/Tipos.html">ES</a>
+				<span id="es|en"> | </span>
+				<a href="">EN</a>
+			</div>
+			<!-- FIN BOTON PARA CAMBIAR EL IDIOMA -->
+		</header>
+	<!-- FIN CABECERA DE LA PÁGINA CON SU NAVEGADOR -->
+
+
+
+
+
+	<!-- NAVEGADOR DEL CONTENIDO -->
+	<nav>
+		<ul>
+			<li id="tcontenidos"> Table of contents </li>
+			<li>
+
+				<a href="#Otros"> Processor types </a>
+
+				<ul>
+					<li> <a href="#GPU"> GPU: Graphics Processing Unit </a> </li>
+					<li> <a href="#ASIP"> ASIP: Application-Specific Instruction-set Processor </a> </li>
+					<li> <a href="#PPU"> PPU: Physics Processing Unit </a> </li>
+					<li> <a href="#DSP"> DSP: Digital Signal Processor </a> </li>
+					<li> <a href="#Cuanticos"> Ordenadores cuánticos </a> </li>
+				</ul>
+
+			</li>
+		</ul>
+
+	</nav>
+	<!-- FIN NAVEGADOR DEL CONTENIDO -->
+
+
+
+
+
+	<!-- SECCIONES DE LA PÁGINA -->
+		<section>
+
+		<!-- OTROS -->
+			<h2>
+				Other processor types
+				<a id="Otros"></a>
+			</h2>
+
+			<p>
+				So far we have referred to processor or CPU interchangeably,
+				However, they are not the same from a technical point of view.
+			</p>
+
+			<p>
+				Technically, a processor is an integrated electronic circuit that performs logical, arithmetic and input/output operations.
+				Under this definition the CPU is only one of the processors in a computer.
+				The CPU is the processor that is dedicated to all general tasks that do not have a specialized processor.
+				Another processor present in all computers is the GPU (Graphics Processing Unit).
+			</p>
+
+			<figure>
+				<img src="../../src/images/tipos_de_procesadores_1.jfif" alt="Decorative image of a GPU" id="tipos_de_procesadores_1">
+				<figcaption> One of the earliest appearances of GPUs was in arcade machines. </figcaption>
+			</figure>
+
+
+			<!-- GPU -->
+			<h3>
+				Graphics Processing Unit (GPU)
+				<a id="GPU"></a>
+			</h3>
+
+			<p>
+				A GPU is a parallel processor that allows the repetitive calculations
+				of painting the screen within an application and all other processes to run at the same time.
+				GPUs were introduced at the end of the last century to help CPUs keep pace, since at the
+				CPUs had a hard time calculating graphics and this caused lag problems.
+				Thus was created the GPU, a specialized graphics processor that allows the fluidity and amount of animations we have today.
+			</p>
+
+			<p>
+				Currently we can distinguish mainly two types of GPUs: those that are
+				integrated in the same chip as the CPU, which are cheaper and less powerful,
+				and the "external" ones. The latter are a separate component of the computer
+				that connects to the processor through buses on the motherboard, while the integrated
+				GPUs are connected to the CPU internally within the chip. External GPUs are more powerful
+				and are the ones used in artificial intelligence training and execution, in video and image
+				editing at a professional level, in computers prepared for video games,
+				even in computers prepared for mining cryptocurrencies...
+			</p>
+
+			<figure>
+				<img src="../../src/images/gpu_1.jfif" alt="Decorative image of a GPU" id="gpu_1">
+				<figcaption>
+					External graphics cards are connected to the motherboard via PCI Express and they
+					have their own power input as well as their own RAM (VRAM).
+				</figcaption>
+			</figure>
+
+			<p>
+				However, this distinction is starting to become less clear with the release of Apple's M1 Pro and M1 Max processors,
+				which have graphics integrated into the same chip as the CPU and are still capable of performing the same tasks
+				and with the same efficiency as the most powerful external graphics on the market.
+			</p>
+			<!-- FIN GPU -->
+
+
+			<!-- ASIP -->
+			<h3>
+				<span lang="en"> Application-Specific Instruction-set Processor </span> (ASIP)
+				<a id="ASIP"></a>
+			</h3>
+
+			<p>
+				ASIP processors are those that have been created to perform a single function.
+				Their circuitry is specially designed for a single type of calculations.
+				For example, to mine BitCoins there have been created processors that are
+				the fastest at solving the problem required to mine a BitCoin. There are also
+				processors for audio processing that can be found in chips of
+				electrical instruments such as keyboards, amplifiers, mixing consoles...
+			</p>
+			<!-- FIN ASIP -->
+
+
+			<!-- PPU -->
+			<h3>
+				<span lang="en"> Physics Processing Unit </span> (PPU)
+				<a id="PPU"></a>
+			</h3>
+
+			<p>
+				A PPU is a microprocessor designed for physics computation,
+				especially for the physics engine of a video game.
+			</p>
+
+			<p>
+				These processors arose with the idea of having specialized processors that
+				perform operations that cost a lot for the CPU and thereby reduce its
+				load, it is similar to the idea behind GPUs, which perform the graphics
+				which perform the graphics calculations so that the CPU does not have to do them.
+			</p>
+			<!-- FIN PPU -->
+
+
+			<!-- DSP -->
+			<h3>
+				<span lang="en"> Digital Signal Processor </span> (DSP)
+				<a id="DSP"></a>
+			</h3>
+
+			<p>
+				A DSP is a specialized microprocessor whose architecture is optimized
+				for the needs of digital signal processing. They are widely used in
+				audio signal processing, telecommunications, digital image processing,
+				radar, sonar and voice recognition systems, and in devices we use every
+				day such as cell phones, hard drives and high-definition televisions.
+			</p>
+
+			<figure>
+				<img src="../../src/images/ejemplo_de_uso_dsp.jfif" alt="Image of a device with a DSP inside" id="ejemplo_de_uso_dsp">
+				<figcaption> Here is an example of DSP usage </figcaption>
+			</figure>
+
+			<p>
+				Their function is typically to measure, filter or compress real-world continuous analog signals.
+				General purpose processors are also capable of executing digital signal processing algorithms successfully,
+				but they are often not able to keep up with real-time processing. In addition, DSPs usually have better power efficiency,
+				so they are better for mobile devices because power consumption is important for longer battery life.
+			</p>
+			<!-- FIN DSP -->
+
+
+			<!-- CUANTICOS -->
+			<h3>
+				Quantum computers
+				<a id="Cuanticos"></a>
+			</h3>
+
+			<p>
+				Quantum computers are a new paradigm at both the software and hardware levels.
+				These computers do not use processors like the ones we have seen so far,
+				they take advantage of the quantum properties of particles and instead of bits they use qubits (quantum bits).
+			</p>
+
+			<figure>
+				<img src="../../src/images/ordenador_cuantico.jpeg" alt="Quantum computer image" id="ordenador_cuantico">
+				<figcaption>
+					If in a quantum computer we go from working with n cubits to working with n+1 cubits,
+					we will be doubling the number of states in which the machine can be, which will go from 2^n to 2^n+1.
+				</figcaption>
+			</figure>
+
+			<p>
+				Here are some videos that help to understand in a basic way how they work and for what they can be used.
+			</p>
+
+
+			<h4>
+				The Map of Quantum Computing | Your Ultimate Guide to Quantum Computers <br>
+				by <a href="https://www.youtube.com/channel/UCxqAWLTk1CmBvZFPzeZMd9A" target="_blank" class="canal_de_youtube"> DoS - Domain of Science </a>
+			</h4>
+
+			<iframe
+				src="https://www.youtube.com/embed/-UlxHPIEVqA"
+				title="YouTube video player"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen
+			>
+			</iframe>
+
+
+			<h4>
+				Quantum Computers Explained – Limits of Human Technology <br>
+				by <a href="https://www.youtube.com/channel/UCsXVk37bltHxD1rDPwtNM8Q" target="_blank" class="canal_de_youtube"> Kurzgesagt – In a Nutshell </a>
+			 </h4>
+
+			<iframe
+				src="https://www.youtube.com/embed/JhHMJCUmq28"
+				title="YouTube video player"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen
+			>
+			</iframe>
+
+
+			<h4>
+				How Does a Quantum Computer Work? <br>
+				by <a href="https://www.youtube.com/channel/UCHnyfMqiRRG1u-2MsSQLbXA" target="_blank" class="canal_de_youtube"> Veritasium </a>
+			</h4>
+
+			<iframe
+				src="https://www.youtube.com/embed/g_IaVepNDT4"
+				title="YouTube video player"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen
+			>
+			</iframe>
+			<!-- FIN CUANTICOS -->
+		<!-- FIN OTROS -->
+
+		</section>
+	<!-- FIN SECCIONES DE LA PÁGINA -->
+
+
+
+
+
+	<!-- PIE DE PÁGINA -->
+		<footer>
+			<address>
+				<p> Authors: Maria Bakaikoa, Daniel Argáiz, Adrián Baldellou </p>
+				<a href="mailto:maria.bakaikoa@alum.unirioja.es"> Contact Maria Bakaikoa </a>
+				<a href="mailto:daniel.argaiz@alum.unirioja.es"> Contact Daniel Argáiz </a>
+				<a href="mailto:adrian.baldellou@alum.unirioja.es"> Contact Adrián Baldellou </a>
+			</address>
+
+			<div id="validaciones">
+				<img src="../../src/images/html5_icon.png" alt="HTML 5 validation icon" id="html5_icon">
+				<img src="../../src/images/css3_icon.gif" alt="CSS 3 validation icon" id="css3_icon">
+				<img src="../../src/images/wcag1AA.gif" alt="WCAG 2.0 (level AA) accessibility validation icon" id="wcag1AA_icon">
+			</div>
+		</footer>
+	<!-- FIN PIE DE PÁGINA -->
+
+
+
+
+
+	<!-- JAVASCRIPT EXTERNO -->
+		<script src="src/javascript/interacciones.js"></script>
+
+	</body>
+</html>

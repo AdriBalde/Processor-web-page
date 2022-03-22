@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+	<!-- METAS -->
+		<!-- charset -->
+		<meta charset="utf-8">
+
+		<!-- keywords -->
+		<meta name="keywords" content="Computer Science, Computer Science Engineering Degree,
+    Mathematics Degree, Rioja's University, Microprocessors, CPU, Processors, Control Unit, CU,
+		Maria Bakaikoa, Daniel Argáiz, Adrián Baldellou">
+
+		<!-- description -->
+		<meta name="description" content="In this web page you can find information about
+		the control unit (CU) of a processor.">
+
+		<!-- autores -->
+		<meta name="Author" content="Maria Bakaikoa, Daniel Argáiz, Adrián Baldellou">
+
+		<!-- viewport para los css que usen @media -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<!-- HOJAS CSS EXTERNAS -->
+		<link rel="stylesheet" type="text/css" href="../../src/css/layout.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/backgrouds.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/text.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/media.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/animaciones.css">
+
+	<!-- TITLE -->
+		<title> Control Unit (CPU) - Unirioja </title>
+
+	</head>
+
+
+
+
+
+	<body>
+
+	<!-- CABECERA DE LA PÁGINA CON SU NAVEGADOR -->
+		<header>
+
+			<!-- ICONO DE LA PÁGINA QUE AL CLICKARLO TE LLEVA AL INICIO -->
+			<div id="icono_cabecera">
+				<a href="Processor.html">
+					<img src="../../src/images/icono_cabecera.png" alt="Web page logo">
+					<h1>
+						   <span>T</span><!-- A
+            --><span>h</span><!-- N
+            --><span>e</span><!-- I
+            --><span> </span><!-- M
+            --><span>P</span><!-- A
+            --><span>r</span><!-- C
+            --><span>o</span><!-- I
+            --><span>c</span><!-- Ó
+            --><span>e</span><!-- N
+            --><span>s</span><!--
+            --><span>s</span><!--
+            --><span>o</span><!--
+            --><span>r</span>
+					</h1>
+				</a>
+			</div>
+			<!-- FIN ICONO DE LA PÁGINA QUE AL CLICKARLO TE LLEVA AL INICIO -->
+
+
+
+			<!-- NAVEGADOR PRINCIPAL DE LA PÁGINA -->
+			<nav id="navpricipal">
+				<ul>
+					<li>   <a href="Processor.html"> Processor </a>   </li>
+					<li id="Arquitectura">
+						<a href="Architecture.html"> Architecture <span class="simbolo fa fa-angle-down"></span><span class="simbolo fa fa-angle-up"></span> </a>
+						<ul>
+							<li>   <a href="ControlUnit.html"> Control Unit </a>   </li>
+							<li>   <a href="ArithmeticLogicUnit.html"> Arithmetic-Logic Unit </a>   </li>
+							<li>   <a href="Cache.html"> Cache </a>   </li>
+							<li>   <a href="Registers.html"> Registers </a>   </li>
+						</ul>
+					</li>
+					<li>   <a href="Connections.html"> Connections </a>   </li>
+					<li>   <a href="Types.html"> Types </a>   </li>
+				</ul>
+			</nav>
+			<!-- FIN NAVEGADOR PRINCIPAL DE LA PÁGINA -->
+
+
+
+			<!-- BOTON PARA CAMBIAR EL IDIOMA -->
+			<div id="idioma">
+				<a href="../es/UnidaddeControl.html">ES</a>
+				<span id="es|en"> | </span>
+				<a href="">EN</a>
+			</div>
+			<!-- FIN BOTON PARA CAMBIAR EL IDIOMA -->
+		</header>
+	<!-- FIN CABECERA DE LA PÁGINA CON SU NAVEGADOR -->
+
+
+
+
+	<!-- NAVEGADOR DEL CONTENIDO -->
+		<nav>
+			<ul>
+				<li id="tcontenidos">Table of Contents</li>
+				<li>
+
+					<a href="#Definicion"> What is the control unit? </a>
+
+					<ul>
+						<li> <a href="#Operaciones"> Operations performed </a> </li>
+					</ul>
+
+				</li>
+				<li>
+
+					<a href="#Componentes"> Components of the CU </a>
+
+					<ul>
+						<li> <a href="#RE"> Instruction log </a> </li>
+						<li> <a href="#RP"> Program count</a> </li>
+						<li> <a href="#CD"> Controller and decoder </a> </li>
+						<li> <a href="#SEC"> Sequencer </a> </li>
+						<li> <a href="#REJ"> Watch </a> </li>
+						<li> <a href="#MUL"> Multiplex </a> </li>
+					</ul>
+
+				</li>
+
+				<li>
+
+					<a href="#CU"> Types of CU </a>
+
+					<ul>
+						<li> <a href="#UCCableadas"> Wired UC </a> </li>
+						<li> <a href="#UCmicroprogramadas">Microprogrammed UC  </a> </li>
+					</ul>
+				</li>
+			</ul>
+
+		</nav>
+	<!-- FIN NAVEGADOR DEL CONTENIDO -->
+
+
+
+
+
+	<!-- SECCIONES DE LA PÁGINA -->
+		<section>
+
+		<!-- DEFINICION -->
+			<h2>
+				What is the Control Unit?
+				<a id="Definicion"></a>
+			</h2>
+
+			<p>
+				The control unit (CU) is one of the three main functional blocks into which a central processing unit (CPU) is divided,
+				is one of the three main functional blocks into which a central processing unit (CPU) is divided.
+				The other two blocks are the processing unit and the input/output bus.
+				It basically works by fetching instructions from the main memory, then "interpreting" (decoding) them, and executing them using the processing unit.
+			</p>
+
+			<p>
+				There are two types of control units:
+			</p>
+
+			<ul>
+				<li><span class="negrita">Wired:</span> generally used in simple machines.</li>
+				<li><span class="negrita">Micro-programmed:</span> more complex machines</li>
+			</ul>
+
+			<figure>
+				<img src="../../src/images/CU_1.jfif" alt="Control unit image" id="CU_1">
+				<figcaption> Schematic diagram of the control unit </figcaption>
+			</figure>
+
+			<p>
+				In the first case, the main components are the sequential logic circuit,
+				the state control circuit, the combinational logic circuit and the control signal recognition emission circuit.
+				In the second case, the microprogramming of the CU is stored in a micro-memory,
+				which is accessed sequentially to subsequently execute each of the micro-instructions.
+			</p>
+
+
+			<!-- Unidad de control, basico -->
+			<h3>
+				Operations performed
+				<a id="Operaciones"></a>
+			</h3>
+
+			<p>
+				Broadly speaking, it performs this cycle of functions:
+			</p>
+
+			<ul>
+				<li> <span class="negrita"> Fetch: </span> reads instructions from memory</li>
+				<li> <span class="negrita"> Decode: </span> Decode the instructions, and the memory addresses involved (if necessary).</li>
+				<li> <span class="negrita"> Execute: </span> Execute the instructions set by the program (sending the orders to the rest of the processor parts).</li>
+			</ul>
+
+			<p>
+				But moving on to a more detailed analysis,
+				The functions performed by the control unit vary greatly by the internal architecture
+				of the processor, as the control unit actually implements this architecture.
+				On a regular processor that natively executes x86 instructions, the control unit
+				performs the tasks of reading (fetching), decoding, execution handling and storing the results.
+				In an x86 processor with a RISC core, the control unit has considerably more work
+				to do: it handles the translation of the x86 instructions into RISC microinstructions,
+				it handles the scheduling of the microinstructions among the various execution units,
+				and it handles the output of these units to make sure they end up where they are supposed to go.
+				In one of these processors the control unit is divided into other units due to
+				the complexity of the work it must perform (such as a planning unit to handle
+				scheduling and a withdrawal unit to handle the results coming from the pipeline).
+				It stores the most frequently used data so that it is searched first in the computer and then in RAM.
+			</p>
+			<!-- FIN Base de la Unidad de Control -->
+		<!-- FIN DEFINICIÓN -->
+
+
+
+
+		<!-- Componentes de la Unidad de control -->
+			<h2>
+				<a id="Componentes">Control Unit Components</a>
+			</h2>
+
+			<p>
+				Below you can read the components of the Control Unit:
+			</p>
+
+			<ul>
+					<li>
+						<a id="RE">
+							<span class="negrita">Instruction register:</span> it is in charge of
+							storing the instruction being executed.
+						</a>
+					</li>
+
+					<li>
+						<a id="RP">
+							<span class="negrita">Program count:</span> register containing the memory
+							address of the next instruction to be executed.
+						</a>
+					</li>
+
+					<li>
+						<a id="CD">
+							<span class="negrita">Controller and decoder:</span> it is in charge of
+							interpreting the instruction for further processing. It is in charge of
+							extracting the operation code from the instruction in progress.
+						</a>
+					</li>
+
+					<li>
+						<a id="SEC">
+							<span class="negrita">Sequencer:</span> generates micro commands
+							necessary to execute the instruction.
+						</a>
+					</li>
+
+					<li>
+						<a id="REJ">
+							<span class="negrita">Clock:</span> provides a succession of
+							electrical impulses at constant intervals.
+						</a>
+					</li>
+
+					<li>
+						<a id="MUL">
+							<span class="negrita">Multiplex:</span> Selects among several inputs
+							and redirects the selection.
+						</a>
+					</li>
+			</ul>
+
+
+			<figure>
+				<img src="../../src/images/Componentes_CU.png" alt="CU components image" id="Componetes_CU">
+				<figcaption> Images related to the topic</figcaption>
+			</figure>
+
+
+			<!-- CU -->
+			<h3>
+				<a id="CU">Types of CU</a>
+			</h3>
+
+			<p>
+				Mainly we have two types of control units, the wired and the microprogrammed:
+			</p>
+
+			<ul>
+				<li>
+					<a id="UCCableadas">
+						The wired control units are used in very simple processors, since in
+					 	them the table of registers and instructions cannot be changed since
+						all the data paths are previously wired in a fixed way, in a wired
+						control unit the instructions will always have the same performance
+					 	and it will not be possible to add new ones or optimize its operation.
+					</a>
+				</li>
+
+				<li>
+					 <a id="UCmicroprogramadas">
+						 In the case of microprogrammed control units, a processor is used to perform all
+						 the functions of the control unit, which makes it possible to optimize
+						 the way in which the instructions are executed and even to add new instructions.
+					 </a>
+				 </li>
+			</ul>
+
+			<p>
+				Due to the complexity of the microprogrammed control unit, they perform
+				the decoding of the instructions much more slowly, which is why, depending
+				on the type of instruction, one type of control unit is used or another when dealing with each of the instructions.
+				Microprogrammed units usually consist of a microcontroller inside the processor.
+				Their main advantage is that the manufacturer can optimize how each instruction
+				is captured and decoded or even make changes if there is a security error in the
+				way certain instructions are executed. This is key for when there are serious
+				threats that can exploit the weak points of the CPU such as what happened with Spectre and Meltdown.
+			</p>
+			<!-- FIN CU -->
+		<!-- FIN COMPONENTES -->
+
+		</section>
+	<!-- FIN SECTION -->
+
+
+
+
+
+	<!-- PIE DE PÁGINA -->
+		<footer>
+			<address>
+				<p> Authors: Maria Bakaikoa, Daniel Argáiz, Adrián Baldellou </p>
+				<a href="mailto:maria.bakaikoa@alum.unirioja.es"> Maria Bakaikoa contact </a>
+				<a href="mailto:daniel.argaiz@alum.unirioja.es"> Daniel Argáiz contact </a>
+				<a href="mailto:adrian.baldellou@alum.unirioja.es"> Adrián Baldellou contact </a>
+			</address>
+
+			<div id="validaciones">
+				<img src="../../src/images/html5_icon.png" alt="HTML 5 validation icon" id="html5_icon">
+				<img src="../../src/images/css3_icon.gif" alt="CSS 3 validation icon" id="css3_icon">
+				<img src="../../src/images/wcag1AA.gif" alt="WCAG 2.0 (level AA) accessibility validation icon" id="wcag1AA_icon">
+			</div>
+		</footer>
+	<!-- FIN PIE DE PÁGINA -->
+
+
+
+
+
+	<!-- JAVASCRIPT EXTERNO -->
+		<script src="src/javascript/interacciones.js"></script>
+
+	</body>
+</html>

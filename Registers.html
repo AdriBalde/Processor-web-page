@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+	<!-- METAS -->
+		<!-- charset -->
+		<meta charset="utf-8">
+
+		<!-- keywords -->
+		<meta name="keywords" content="Computer Science, Computer Science Engineering Degree,
+    Mathematics Degree, Rioja's University, Microprocessors, CPU, Processors, Registers
+		Maria Bakaikoa, Daniel Argáiz, Adrián Baldellou">
+
+		<!-- description -->
+		<meta name="description" content="In this web page you can find information about the registers
+		of a processor.">
+
+		<!-- autores -->
+		<meta name="Author" content="Maria Bakaikoa, Daniel Argáiz, Adrián Baldellou">
+
+		<!-- viewport para los css que usen @media -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<!-- HOJAS CSS EXTERNAS -->
+		<link rel="stylesheet" type="text/css" href="../../src/css/layout.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/backgrouds.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/text.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/media.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/animaciones.css">
+
+	<!-- TITLE -->
+		<title> Registers (CPU) - Unirioja </title>
+
+	</head>
+
+
+
+
+
+	<body>
+
+	<!-- CABECERA DE LA PÁGINA CON SU NAVEGADOR -->
+		<header>
+
+			<!-- ICONO DE LA PÁGINA QUE AL CLICKARLO TE LLEVA AL INICIO -->
+			<div id="icono_cabecera">
+				<a href="Processor.html">
+					<img src="../../src/images/icono_cabecera.png" alt="Web page logo">
+					<h1>
+						   <span>T</span><!-- A
+            --><span>h</span><!-- N
+            --><span>e</span><!-- I
+            --><span> </span><!-- M
+            --><span>P</span><!-- A
+            --><span>r</span><!-- C
+            --><span>o</span><!-- I
+            --><span>c</span><!-- Ó
+            --><span>e</span><!-- N
+            --><span>s</span><!--
+            --><span>s</span><!--
+            --><span>o</span><!--
+            --><span>r</span>
+					</h1>
+				</a>
+			</div>
+			<!-- FIN ICONO DE LA PÁGINA QUE AL CLICKARLO TE LLEVA AL INICIO -->
+
+
+
+			<!-- NAVEGADOR PRINCIPAL DE LA PÁGINA -->
+			<nav id="navpricipal">
+				<ul>
+					<li>   <a href="Processor.html"> Processor </a>   </li>
+					<li id="Arquitectura">
+						<a href="Architecture.html"> Architecture <span class="simbolo fa fa-angle-down"></span><span class="simbolo fa fa-angle-up"></span> </a>
+						<ul>
+							<li>   <a href="ControlUnit.html"> Control Unit </a>   </li>
+							<li>   <a href="ArithmeticLogicUnit.html"> Arithmetic-Logic Unit </a>   </li>
+							<li>   <a href="Cache.html"> Cache </a>   </li>
+							<li>   <a href="Registers.html"> Registers </a>   </li>
+						</ul>
+					</li>
+					<li>   <a href="Connections.html"> Connections </a>   </li>
+					<li>   <a href="Types.html"> Types </a>   </li>
+				</ul>
+			</nav>
+			<!-- FIN NAVEGADOR PRINCIPAL DE LA PÁGINA -->
+
+
+
+			<!-- BOTON PARA CAMBIAR EL IDIOMA -->
+			<div id="idioma">
+				<a href="../es/Registros.html">ES</a>
+				<span id="es|en"> | </span>
+				<a href="">EN</a>
+			</div>
+			<!-- FIN BOTON PARA CAMBIAR EL IDIOMA -->
+		</header>
+	<!-- FIN CABECERA DE LA PÁGINA CON SU NAVEGADOR -->
+
+
+
+
+
+	<!-- NAVEGADOR DEL CONTENIDO -->
+		<nav>
+			<ul>
+				<li id="tcontenidos"> Table of contents </li>
+				<li>	<a href="#Definicion">Registers description</a> </li>
+				<li>
+
+					<a href="#Tipos"> Registers type </a>
+
+					<ul>
+						<li> <a href="#RD"> Data registers </a> </li>
+						<li> <a href="#RM"> Memory registers </a></li>
+						<li> <a href="#RPG"> Gerneral purpose registers </a> </li>
+						<li> <a href="#RF"> Floating point registers </a> </li>
+						<li> <a href="#RC"> Constants registers </a> </li>
+						<li> <a href="#RPE"> Specific purpose registers </a> </li>
+					</ul>
+
+				</li>
+				<li><a href="#Importancia">Registers importance</a></li>
+			</ul>
+		</nav>
+	<!-- FIN NAVEGADOR DEL CONTENIDO -->
+
+
+
+
+
+	<!-- SECCIONES DE LA PÁGINA -->
+		<section>
+
+			<!-- DESCRIPCION -->
+				<h2>
+					<a id="Definicion">Brief description of what a registry is</a>
+				</h2>
+
+				<p>
+					In computer architecture, a register is a high-speed, low-capacity memory,
+					integrated in the microprocessor, that allows transient storage and access
+					to frequently used values, generally in mathematical operations.
+				</p>
+
+				<p>
+					Registers are at the top of the memory hierarchy, and are the fastest
+					way for the system to store data. Registers are generally measured by
+					the number of bits they store; for example, an "8-bit register" or a
+					"32-bit register". Registers are generally implemented in a register bank,
+					but in the past individual bistables, SRAM memory,
+					or even more primitive forms were used.
+				</p>
+
+				<p>
+					The term is generally used to refer to the group of registers that can
+					be directly indexed as operands of an instruction, as defined in the
+					instruction set. However, microprocessors also have many other registers
+					that are used for a specific purpose, such as the program counter.
+					For example, in the IA32 architecture, the instruction set defines 8 32-bit registers.
+				</p>
+			<!-- FIN DESCRIPCION -->
+
+
+
+
+			<!-- TIPOS -->
+				<h2>
+					<a id="Tipos">Registers type</a>
+				</h2>
+
+				<p>
+					The CPU has 14 internal registers, each of 16 bits. The first four registers,
+					AX, BX, CX, and DX are general purpose registers and can also be used as
+					8-bit registers, to use them as such it is necessary to refer to them as
+					for example: AH and AL, which are the high and low bytes of the AX register.
+					This nomenclature is also applicable to the BX, CX and DX registers.
+				</p>
+
+				<ul>
+					<li>
+						<a id="RD">
+							Data registers are used to store integers. In some older computers,
+							there was a single register where all information was stored,
+							called an accumulator. information was stored, called an accumulator.
+						</a>
+					</li>
+
+					<li>
+						<a id="RM">
+							Memory registers are used to store memory addresses exclusively.
+							They were widely used in the Harvard architecture, since often
+							the addresses had a different word size than the data.
+						</a>
+					</li>
+
+					<li>
+						<a id="RPG">
+							General Purpose Registers (GPRs) can store both data and addresses.
+							They are fundamental in the von Neumann architecture.
+							Most modern computers use GPRs.
+						</a>
+					</li>
+
+					<li>
+						<a id="RF">
+							Floating point registers are used to store data in floating point format.
+						</a>
+					</li>
+
+					<li>
+						<a id="RC">
+							Constant registers have hardware-created read-only values.
+							For example, in MIPS the zero register is always 0.
+						</a>
+					</li>
+
+					<li>
+						<a id="RPE">
+							Specific purpose registers store specific system state information,
+							such as the stack pointer or status register.
+						</a>
+					</li>
+				</ul>
+			<!-- FIN TIPOS -->
+
+
+
+
+			<!-- IMPORTANCIA -->
+				<h2>
+					<a id="Importancia">Registers importance</a>
+				</h2>
+
+				<p>
+					The registers not only share the processor's load, but also provide it
+					with instructions on how the data should be processed. In addition,
+					these registers provide an important aid to microprocessors in determining
+					where to send data after processing, and in what arrangement to store
+					it in main memory or within a storage device. Also, the number of registers
+					integrated and operating within a microprocessor helps define its operating
+					efficiency and data processing capabilities.
+				</p>
+			<!-- FIN IMPORTANCIA -->
+
+		</section>
+	<!-- FIN SECCIONES DE LA PÁGINA -->
+
+
+
+
+
+	<!-- PIE DE PÁGINA -->
+		<footer>
+			<address>
+				<p> Authors: Maria Bakaikoa, Daniel Argáiz, Adrián Baldellou </p>
+				<a href="mailto:maria.bakaikoa@alum.unirioja.es"> Contact Maria Bakaikoa </a>
+				<a href="mailto:daniel.argaiz@alum.unirioja.es"> Contact Daniel Argáiz </a>
+				<a href="mailto:adrian.baldellou@alum.unirioja.es"> Contact Adrián Baldellou </a>
+			</address>
+
+			<div id="validaciones">
+				<img src="../../src/images/html5_icon.png" alt="HTML 5 validation icon" id="html5_icon">
+				<img src="../../src/images/css3_icon.gif" alt="CSS 3 validation icon" id="css3_icon">
+				<img src="../../src/images/wcag1AA.gif" alt="WCAG 2.0 (level AA) accessibility validation icon" id="wcag1AA_icon">
+			</div>
+		</footer>
+	<!-- FIN PIE DE PÁGINA -->
+
+
+
+
+
+	<!-- JAVASCRIPT EXTERNO -->
+		<script src="src/javascript/interacciones.js"></script>
+
+	</body>
+</html>

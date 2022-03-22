@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+
+	<!-- METAS -->
+		<!-- charset -->
+		<meta charset="utf-8">
+
+		<!-- keywords -->
+		<meta name="keywords" content="Sistemas Informáticos, Grado en Ingeniería Informática,
+    Grado en Matemáticas, Universidad de La Rioja, Microprocesadores, CPU, Procesadores, Registros,
+		Maria Bakaikoa, Daniel Argáiz, Adrián Baldellou">
+
+		<!-- description -->
+		<!--cambiar decripcion dependiendo de la pagina-->
+		<meta name="description" content="En esta página puedes encontrar información acerca de los
+		registros de un procesador.">
+
+		<!-- autores -->
+		<meta name="Author" content="Maria Bakaikoa, Daniel Argáiz, Adrián Baldellou">
+
+		<!-- viewport para los css que usen @media -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<!-- HOJAS CSS EXTERNAS -->
+		<link rel="stylesheet" type="text/css" href="../../src/css/layout.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/backgrouds.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/text.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/media.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/animaciones.css">
+
+	<!-- TITLE -->
+		<title> Registros (CPU) - Unirioja </title>
+
+	</head>
+
+
+
+
+
+	<body>
+
+	<!-- CABECERA DE LA PÁGINA CON SU NAVEGADOR -->
+		<header>
+
+			<!-- ICONO DE LA PÁGINA QUE AL CLICKARLO TE LLEVA AL INICIO -->
+			<div id="icono_cabecera">
+				<a href="Procesador.html">
+					<img src="../../src/images/icono_cabecera.png" alt="Logo de la página">
+					<h1>
+						   <span>E</span><!--
+          	--><span>l</span><!--
+            --><span> </span><!--
+            --><span>P</span><!--
+            --><span>r</span><!--
+            --><span>o</span><!--
+            --><span>c</span><!--
+            --><span>e</span><!--
+            --><span>s</span><!--
+            --><span>a</span><!--
+            --><span>d</span><!--
+            --><span>o</span><!--
+            --><span>r</span>
+					</h1>
+				</a>
+			</div>
+			<!-- FIN ICONO DE LA PÁGINA QUE AL CLICKARLO TE LLEVA AL INICIO -->
+
+
+
+			<!-- NAVEGADOR PRINCIPAL DE LA PÁGINA -->
+			<nav id="navpricipal">
+				<ul>
+					<li>   <a href="Procesador.html"> Procesador </a>   </li>
+					<li id="Arquitectura">
+						<a href="Arquitectura.html"> Arquitectura <span class="simbolo fa fa-angle-down"></span><span class="simbolo fa fa-angle-up"></span> </a>
+						<ul>
+							<li>   <a href="UnidaddeControl.html"> Unidad de control </a>   </li>
+							<li>   <a href="UnidadAritmeticoLogica.html"> Unidad aritmético lógica </a>   </li>
+							<li>   <a href="Cache.html"> Caché </a>   </li>
+							<li>   <a href="Registros.html"> Registros </a>   </li>
+						</ul>
+					</li>
+					<li>   <a href="Conexiones.html"> Conexiones </a>   </li>
+					<li>   <a href="Tipos.html"> Tipos </a>   </li>
+				</ul>
+			</nav>
+			<!-- FIN NAVEGADOR PRINCIPAL DE LA PÁGINA -->
+
+
+
+			<!-- BOTON PARA CAMBIAR EL IDIOMA -->
+			<div id="idioma">
+				<a href="">ES</a>
+				<span id="es|en"> | </span>
+				<a href="../en/Registers.html">EN</a>
+			</div>
+			<!-- FIN BOTON PARA CAMBIAR EL IDIOMA -->
+		</header>
+	<!-- FIN CABECERA DE LA PÁGINA CON SU NAVEGADOR -->
+
+
+
+
+
+	<!-- NAVEGADOR DEL CONTENIDO -->
+		<nav>
+			<ul>
+				<li id="tcontenidos"> Tabla de contenidos </li>
+				<li>
+					<a href="#Definicion">Descripción de los registros</a>
+				</li>
+				<li>
+
+					<a href="#Tipos"> Tipos de Registros </a>
+
+					<ul>
+						<li> <a href="#RD"> Registros de datos </a> </li>
+						<li> <a href="#RM"> Registros de memoria </a></li>
+						<li> <a href="#RPG"> Registros de propósito general </a> </li>
+						<li> <a href="#RF"> Registros de coma flotante </a> </li>
+						<li> <a href="#RC"> Registros constantes </a> </li>
+						<li> <a href="#RPE"> Registros de propósito específico</a> </li>
+					</ul>
+
+				</li>
+				<li><a href="#Importancia">Importancia de los Registros</a></li>
+			</ul>
+		</nav>
+	<!-- FIN NAVEGADOR DEL CONTENIDO -->
+
+
+
+
+
+	<!-- SECCIONES DE LA PÁGINA -->
+		<section>
+
+		<!-- DESCRIPCION -->
+			<h2>
+				<a id="Definicion">Breve descripción de que es un registro</a>
+			</h2>
+
+			<p>
+				En arquitectura de ordenadores, un registro es una memoria de alta velocidad y
+				poca capacidad, integrada en el microprocesador,
+				que permite guardar transitoriamente y acceder a valores muy usados,
+				generalmente en operaciones matemáticas.
+			</p>
+
+			<p>
+				Los registros están en la cumbre de la jerarquía de memoria, y son la
+				manera más rápida que tiene el sistema de almacenar datos.
+				Los registros se miden generalmente por el número de bits que almacenan;
+				por ejemplo, un "registro de 8 bits" o un "registro de 32 bits".
+				Los registros generalmente se implementan en un banco de registros, pero
+				antiguamente se usaban biestables individuales, memoria SRAM o formas aún más primitivas.
+			</p>
+
+			<p>
+				El término es usado generalmente para referirse al grupo de registros que
+				pueden ser directamente indexados como operandos de una instrucción,
+				como está definido en el conjunto de instrucciones.
+				Sin embargo, los microprocesadores tienen además muchos otros registros
+				que se usan con un propósito específico, como el contador de programa.
+				Por ejemplo, en la arquitectura IA32, el conjunto de
+				instrucciones define 8 registros de 32 bits.
+			</p>
+		<!-- FIN DESCRIPCION -->
+
+
+
+
+		<!-- TIPOS -->
+			<h2>
+				<a id="Tipos">Tipos de Registros</a>
+			</h2>
+
+			<p>
+				La CPU tiene 14 registros internos, cada uno de 16 bits. Los primeros cuatro,
+				AX, BX, CX, y DX son registros de uso general y también pueden ser
+				utilizados como registros de 8 bits, para utilizarlos
+				como tales es necesario referirse a ellos como por ejemplo: AH y AL,
+				que son los bytes alto (high) y bajo (low) del registro AX.
+				Esta nomenclatura es aplicable también a los registros BX, CX y DX.
+			</p>
+
+			<ul>
+				<li>
+					<a id="RD">
+						Los registros de datos se usan para guardar números enteros.
+						En algunas computadoras antiguas, existía un único registro donde se
+						guardaba toda la información, llamado acumulador.
+					</a>
+				</li>
+
+				<li>
+					<a id="RM">
+						Los registros de memoria se usan para guardar exclusivamente direcciones
+						de memoria. Eran muy usados en la arquitectura Harvard, ya que muchas
+						veces las direcciones tenían un tamaño de palabra distinto que los datos.
+					</a>
+				</li>
+
+				<li>
+					<a id="RPG"> Los registros de propósito general (en inglés GPRs o General Purpose Registers)
+						pueden guardar tanto datos como direcciones. Son fundamentales en la
+						arquitectura de von Neumann. La mayor parte de las computadoras modernas usa GPR.
+					</a>
+				</li>
+
+				<li>
+					<a id="RF">
+						Los registros de coma flotante se usan para
+						guardar datos en formato de coma flotante.
+					</a>
+				</li>
+
+				<li>
+					<a id="RC">
+						Los registros constantes tienen valores creados por hardware de sólo
+						lectura. Por ejemplo, en MIPS el registro cero siempre vale 0.
+					</a>
+				</li>
+
+				<li>
+					<a id="RPE">
+						Los registros de propósito específico guardan información específica
+						del estado del sistema, como el puntero de pila o el registro de estado.
+					</a>
+				</li>
+			</ul>
+		<!-- FIN TIPOS -->
+
+
+
+
+		<!-- IMPORTANCIA -->
+			<h2>
+				<a id="Importancia">Importancia de los Registros</a>
+			</h2>
+
+			<p>
+				Los registros no sólo comparten la carga del procesador, sino que también
+				le proporcionan instrucciones acerca de cómo se deben procesar los datos.
+				Además, estos registros proporcionan una importante ayuda
+				a los microprocesadores en la tarea de determinar dónde enviar los datos
+				tras el procesamiento, y en qué disposición almacenarlo en la memoria
+				principal o dentro de un dispositivo de almacenamiento.
+				También, el número de registros integrados y operando dentro de un
+				microprocesador ayuda a definir su eficiencia operativa y capacidades de procesamiento de datos.
+			</p>
+		<!-- FIN IMPORTANCIA -->
+
+		</section>
+	<!-- FIN SECCIONES DE LA PÁGINA -->
+
+
+
+
+
+	<!-- PIE DE PÁGINA -->
+		<footer>
+			<address>
+				<p> Autores: Maria Bakaikoa, Daniel Argáiz, Adrián Baldellou </p>
+				<a href="mailto:maria.bakaikoa@alum.unirioja.es"> Contacto Maria Bakaikoa </a>
+				<a href="mailto:daniel.argaiz@alum.unirioja.es"> Contacto Daniel Argáiz </a>
+				<a href="mailto:adrian.baldellou@alum.unirioja.es"> Contacto Adrián Baldellou </a>
+			</address>
+
+			<div id="validaciones">
+				<img src="../../src/images/html5_icon.png" alt="Icono de validación de HTML 5" id="html5_icon">
+				<img src="../../src/images/css3_icon.gif" alt="Icono de validación de CSS 3" id="css3_icon">
+				<img src="../../src/images/wcag1AA.gif" alt="Icono de validación de accesibilidad WCAG 2.0 (level AA)" id="wcag1AA_icon">
+			</div>
+		</footer>
+	<!-- FIN PIE DE PÁGINA -->
+
+
+
+
+
+	<!-- JAVASCRIPT EXTERNO -->
+		<script src="src/javascript/interacciones.js"></script>
+
+	</body>
+</html>

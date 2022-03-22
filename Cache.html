@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+	<!-- METAS -->
+		<!-- charset -->
+		<meta charset="utf-8">
+
+		<!-- keywords -->
+		<meta name="keywords" content="Computer Science, Computer Science Engineering Degree,
+    Mathematics Degree, Rioja's University, Microprocessors, CPU, Processors, Cache,
+		Maria Bakaikoa, Daniel Argáiz, Adrián Baldellou">
+
+		<!-- description -->
+		<meta name="description" content="In this web page you can find information about
+		the cache of the processors.">
+
+		<!-- autores -->
+		<meta name="Author" content="Maria Bakaikoa, Daniel Argáiz, Adrián Baldellou">
+
+		<!-- viewport para los css que usen @media -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<!-- HOJAS CSS EXTERNAS -->
+		<link rel="stylesheet" type="text/css" href="../../src/css/layout.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/backgrouds.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/text.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/media.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/animaciones.css">
+
+	<!-- TITLE -->
+		<title> Cache (CPU) - Unirioja </title>
+
+	</head>
+
+
+
+
+
+	<body>
+
+	<!-- CABECERA DE LA PÁGINA CON SU NAVEGADOR -->
+		<header>
+
+			<!-- ICONO DE LA PÁGINA QUE AL CLICKARLO TE LLEVA AL INICIO -->
+			<div id="icono_cabecera">
+				<a href="Processor.html">
+					<img src="../../src/images/icono_cabecera.png" alt="Web page logo">
+					<h1>
+						   <span>T</span><!-- A
+			            --><span>h</span><!-- N
+			            --><span>e</span><!-- I
+			            --><span> </span><!-- M
+			            --><span>P</span><!-- A
+			            --><span>r</span><!-- C
+			            --><span>o</span><!-- I
+			            --><span>c</span><!-- Ó
+			            --><span>e</span><!-- N
+			            --><span>s</span><!--
+			            --><span>s</span><!--
+			            --><span>o</span><!--
+			            --><span>r</span>
+					</h1>
+				</a>
+			</div>
+			<!-- FIN ICONO DE LA PÁGINA QUE AL CLICKARLO TE LLEVA AL INICIO -->
+
+
+
+			<!-- NAVEGADOR PRINCIPAL DE LA PÁGINA -->
+			<nav id="navpricipal">
+				<ul>
+					<li>   <a href="Processor.html"> Processor </a>   </li>
+					<li id="Arquitectura">
+						<a href="Architecture.html"> Architecture <span class="simbolo fa fa-angle-down"></span><span class="simbolo fa fa-angle-up"></span> </a>
+						<ul>
+							<li>   <a href="ControlUnit.html"> Control Unit </a>   </li>
+							<li>   <a href="ArithmeticLogicUnit.html"> Arithmetic-Logic Unit </a>   </li>
+							<li>   <a href="Cache.html"> Cache </a>   </li>
+							<li>   <a href="Registers.html"> Registers </a>   </li>
+						</ul>
+					</li>
+					<li>   <a href="Connections.html"> Connections </a>   </li>
+					<li>   <a href="Types.html"> Types </a>   </li>
+				</ul>
+			</nav>
+			<!-- FIN NAVEGADOR PRINCIPAL DE LA PÁGINA -->
+
+
+
+			<!-- BOTON PARA CAMBIAR EL IDIOMA -->
+			<div id="idioma">
+				<a href="../es/Cache.html">ES</a>
+				<span id="es|en"> | </span>
+				<a href="">EN</a>
+			</div>
+			<!-- FIN BOTON PARA CAMBIAR EL IDIOMA -->
+		</header>
+	<!-- FIN CABECERA DE LA PÁGINA CON SU NAVEGADOR -->
+
+
+
+
+
+	<!-- NAVEGADOR DEL CONTENIDO -->
+		<nav>
+			<ul>
+				<li id="tcontenidos"> Table of contents </li>
+				<li>
+
+					<a href="#Definición">What is a cache?</a>
+				</li>
+				<li>
+
+					<a href="#Funcionamiento">Functioning</a>
+				</li>
+				<li>
+					<a href="#Niveles">Levels</a>
+					<ul>
+						<li><a href="#L1">Cache L1</a></li>
+						<li><a href="#L2">Cache L2</a></li>
+						<li><a href="#L3">Cache L3</a></li>
+						<li><a href="#L4">Cache L4</a></li>
+					</ul>
+				</li>
+			</ul>
+
+		</nav>
+	<!-- FIN NAVEGADOR DEL CONTENIDO -->
+
+
+
+
+
+	<!-- SECCIONES DE LA PÁGINA -->
+		<section>
+
+		<!-- DEFINICION -->
+			<h2>
+				What is a cache?
+				<a id="Definición"></a>
+			</h2>
+
+			<p>
+				Cache memory is a very fast type of memory that contains a small set of
+				instructions that your computer uses regularly to perform its daily tasks.
+				The computer loads these instructions into the cache using complex algorithms
+				in order to access them quickly, efficiently and without further obstructions,
+				which greatly increases efficiency.
+			</p>
+		<!-- FIN DEFINICION -->
+
+
+
+
+		<!-- FUNCIONAMIENTO -->
+			<h2>
+				Functioning
+				<a id="Funcionamiento"></a>
+			</h2>
+
+			<p>
+				Cache memory does not work in the same way as RAM memory, we cannot make
+				the CPU address a specific address within the cache. This is because what
+				the cache does is copy the data that is in RAM and is close to the memory
+				address that the CPU is currently executing, so the cache copies the memory
+				addresses closest to the cache memory inside it. Proportionally speaking,
+				nowadays it is common to handle capacities of several terabytes when we talk
+				about hard disks, while when we talk about RAM, this amount is reduced to a
+				few gigabytes (nowadays the most common is to see 16 or 8 GB of RAM).
+				Cache, on the other hand, is even smaller, and is actually measured in megabytes or kilobytes.
+			</p>
+		<!-- FIN FUNCIONAMIENTO -->
+
+
+
+
+		<!-- NIVELES -->
+			<h2>
+				Levels
+				<a id="Niveles"></a>
+			</h2>
+
+			<p>
+				The cache is divided into a total of three general levels to which we can add a fourth,
+				which is not at all common and which plays a particular role: L1, L2, L3 and L4.
+				The difference between L1, L2 and L3 cache memory is based on a
+				hierarchy of proximity to the processor, speed and capacity.
+			</p>
+
+
+			<!-- L1 -->
+			<h3>
+				Cache L1
+				<a id="L1"></a>
+			</h3>
+
+			<p>
+				It is the most basic level, the closest to the processor and the fastest.
+				It also has the lowest capacity, for example a two-core processor such
+				as the Pentium G4560 has 64 KB in total (32 KB per core), although the
+				most powerful models (Xeon and Epyc series) can reach 3 MB without any problem.
+			</p>
+			<!-- FIN L1 -->
+
+
+			<!-- L2 -->
+			<h3>
+				Cache L2
+				<a id="L2"></a>
+			</h3>
+			<p>
+				It is an intermediate level that presents a good balance between capacity,
+				closeness and speed. Following the example above, the Pentium G4560 has
+				512 KB (256 KB per core) of L2 cache, but a Threadripper 2990WX comes to
+				16 MB in total (512 KB per core).
+			</p>
+			<!-- FIN L2 -->
+
+
+			<!-- L3 -->
+			<h3>
+				Cache L3
+				<a id="L3"></a>
+			</h3>
+
+			<p>
+				It ranks lower than the former in both closeness and speed, but has a much higher capacity.
+				The Penitum G4560 has 3MB of L3 cache shared across its two cores,
+				while the Threadripper 2990WX comes with a total of 64MB (16MB shared per eight-core block).
+			</p>
+			<!-- FIN L3 -->
+
+
+			<!-- L4 -->
+			<h3>
+				Cache L4
+				<a id="L4"></a>
+			</h3>
+
+			<p>
+				This is an unusual type of cache memory that is typically used to support
+				performance enhancement of integrated GPUs. For example, the Core i5 5775C came
+				with 6 MB of L3 cache and 128 MB of eDRAM as L4 cache, which was used as
+				a buffer for the integrated Intel Iris Pro 6200 graphics card.
+				This improved bandwidth and reduced the impact of having to use RAM as graphics memory.
+			</p>
+			<!-- FIN L4 -->
+
+			<figure>
+				<img src="../../src/images/EsquemaNiveles.png" alt="Cache levels diagram" id="EsquemaNiveles.png">
+				<figcaption>This is the hierarchy diagram of the cache levels.</figcaption>
+			</figure>
+		<!-- FIN NIVELES -->
+
+		</section>
+	<!-- FIN SECCIONES DE LA PÁGINA -->
+
+
+
+
+
+	<!-- PIE DE PÁGINA -->
+		<footer>
+			<address>
+				<p> Authors: Maria Bakaikoa, Daniel Argáiz, Adrián Baldellou </p>
+				<a href="mailto:maria.bakaikoa@alum.unirioja.es"> Contact Maria Bakaikoa </a>
+				<a href="mailto:daniel.argaiz@alum.unirioja.es"> Contact Daniel Argáiz </a>
+				<a href="mailto:adrian.baldellou@alum.unirioja.es"> Contact Adrián Baldellou </a>
+			</address>
+
+			<div id="validaciones">
+				<img src="../../src/images/html5_icon.png" alt="HTML 5 validation icon" id="html5_icon">
+				<img src="../../src/images/css3_icon.gif" alt="CSS 3 validation icon" id="css3_icon">
+				<img src="../../src/images/wcag1AA.gif" alt="WCAG 2.0 (level AA) accessibility validation icon" id="wcag1AA_icon">
+			</div>
+		</footer>
+	<!-- FIN PIE DE PÁGINA -->
+
+
+
+
+
+	<!-- JAVASCRIPT EXTERNO -->
+		<script src="src/javascript/interacciones.js"></script>
+
+	</body>
+</html>

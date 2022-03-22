@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+	<!-- METAS -->
+		<!-- charset -->
+		<meta charset="utf-8">
+
+		<!-- keywords -->
+		<meta name="keywords" content="Computer Science, Computer Science Engineering Degree,
+    Mathematics Degree, Rioja's University, Microprocessors, CPU, Processors, Connections,
+		Maria Bakaikoa, Daniel Argáiz, Adrián Baldellou">
+
+		<!-- description -->
+		<meta name="description" content="In this web page you can find information
+		about the connections of a processor with the rest of the components of a computer.">
+
+		<!-- autores -->
+		<meta name="Author" content="Maria Bakaikoa, Daniel Argáiz, Adrián Baldellou">
+
+		<!-- viewport para los css que usen @media -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<!-- HOJAS CSS EXTERNAS -->
+		<link rel="stylesheet" type="text/css" href="../../src/css/layout.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/backgrouds.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/text.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/media.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/animaciones.css">
+
+	<!-- TITLE -->
+		<title> Connections (CPU) - Unirioja </title>
+
+	</head>
+
+	<body>
+
+	<!-- CABECERA DE LA PÁGINA CON SU NAVEGADOR -->
+		<header>
+
+			<!-- ICONO DE LA PÁGINA QUE AL CLICKARLO TE LLEVA AL INICIO -->
+			<div id="icono_cabecera">
+				<a href="Processor.html">
+					<img src="../../src/images/icono_cabecera.png" alt="Web page logo">
+					<h1>
+						   		   <span>T</span><!-- A
+			            --><span>h</span><!-- N
+			            --><span>e</span><!-- I
+			            --><span> </span><!-- M
+			            --><span>P</span><!-- A
+			            --><span>r</span><!-- C
+			            --><span>o</span><!-- I
+			            --><span>c</span><!-- Ó
+			            --><span>e</span><!-- N
+			            --><span>s</span><!--
+			            --><span>s</span><!--
+			            --><span>o</span><!--
+			            --><span>r</span>
+					</h1>
+				</a>
+			</div>
+			<!-- FIN ICONO DE LA PÁGINA QUE AL CLICKARLO TE LLEVA AL INICIO -->
+
+
+
+			<!-- NAVEGADOR PRINCIPAL DE LA PÁGINA -->
+			<nav id="navpricipal">
+				<ul>
+					<li>   <a href="Processor.html"> Processor </a>   </li>
+					<li id="Arquitectura">
+						<a href="Architecture.html"> Architecture <span class="simbolo fa fa-angle-down"></span><span class="simbolo fa fa-angle-up"></span> </a>
+						<ul>
+							<li>   <a href="ControlUnit.html"> Control Unit </a>   </li>
+							<li>   <a href="ArithmeticLogicUnit.html"> Arithmetic-Logic Unit </a>   </li>
+							<li>   <a href="Cache.html"> Cache </a>   </li>
+							<li>   <a href="Registers.html"> Registers </a>   </li>
+						</ul>
+					</li>
+					<li>   <a href="Connections.html"> Connections </a>   </li>
+					<li>   <a href="Types.html"> Types </a>   </li>
+				</ul>
+			</nav>
+			<!-- FIN NAVEGADOR PRINCIPAL DE LA PÁGINA -->
+
+
+
+			<!-- BOTON PARA CAMBIAR EL IDIOMA -->
+			<div id="idioma">
+				<a href="../es/Conexiones.html">ES</a>
+				<span id="es|en"> | </span>
+				<a href="">EN</a>
+			</div>
+			<!-- FIN BOTON PARA CAMBIAR EL IDIOMA -->
+		</header>
+	<!-- FIN CABECERA DE LA PÁGINA CON SU NAVEGADOR -->
+
+
+
+
+
+	<!-- NAVEGADOR DEL CONTENIDO -->
+		<nav>
+			<ul>
+				<li id="tcontenidos"> Table of contents </li>
+				<li>
+
+					<a href="#definicion">What are external connections?</a>
+
+				</li>
+				<li>
+
+					<a href="#Buses">Processor busses </a>
+
+					<ul>
+						<li> <a href="#BDatos">Data buses</a></li>
+						<li> <a href="#BDireccion">Steering buses</a></li>
+						<li> <a href="#BControl">Control buses</a></li>
+					</ul>
+
+				</li>
+			</ul>
+
+		</nav>
+	<!-- FIN NAVEGADOR DEL CONTENIDO -->
+
+
+
+
+
+	<!-- SECCIONES DE LA PÁGINA -->
+		<section>
+
+		<!-- DEFINICION -->
+			<h2>
+				What are external connections?
+				<a id="Definicion"></a>
+			</h2>
+
+			<p>
+				The microprocessor has an array of metallic elements that enable the
+				electrical connection between the integrated circuit that makes up the
+				microprocessor and the circuitry on the motherboard. Depending on the
+				complexity and power, a processor can have from 8 to more than 2000
+				metallic elements on the surface of its package. The processor is
+				mounted with the help of a CPU socket soldered onto the motherboard.
+				Generally we distinguish three types of connection:
+			</p>
+
+			<ul>
+				<li> <span class="negrita">PGA(Pin Grid Array):</span>The connection is
+					made by means of small metal wires distributed along the base of the processor,
+					which are inserted into the motherboard through small holes.
+					When the processor is inserted, a lever will anchor the pins so that
+					they make good contact and do not come loose.
+				</li>
+
+				<li>
+					<span class="negrita">BGA(Ball Grid Array):</span> The connection is
+					made by means of balls soldered to the processor, which make contact with the socket.
+				</li>
+
+				<li>
+					<span class="negrita">LGA(Land Grid Array):</span>The connection is
+					made via smooth contact surfaces with small pins provided on the motherboard.
+				</li>
+			</ul>
+		<!-- FIN DEFINICION -->
+
+
+
+
+		<!-- BUSES -->
+			<h2>
+				Processor busses
+				<a id="Buses"></a>
+			</h2>
+
+			<p>
+				All processors have a main or system bus over which all data, instructions
+				and addresses are sent and received from the chipset's integrated or other
+				devices. As the connecting bridge between the processor and the rest
+				of the system, it defines much of the system's performance, its speed
+				is measured in bits per second.
+			</p>
+
+			<p>There are 3 types of processor buses: </p>
+
+
+			<!-- DATA -->
+			<h3>
+				Data Buses
+				<a id="BDatos"></a>
+			</h3>
+
+			<p>
+				It carries the data that is transferred between units. It is usually bidirectional,
+				i.e. the same wires are used to transmit information in or out of a unit,
+				but always at different times. The difference between the internal data
+				bus and the external data bus should be clarified: The internal data bus
+				is used to transfer data between the elements of the mainframe (consisting
+				of the CPU together with the main memory). On the other hand, the
+				external data bus is considered an extension of the internal data bus
+				as it connects the processor to the rest of the units.
+			</p>
+			<!-- FIN DATA -->
+
+
+			<!-- STEERING -->
+			<h3>
+				Steering buses
+				<a id="BDireccion"></a>
+			</h3>
+
+			<p>
+				Carries the address of the memory location or peripheral involved in the
+				information traffic. It enables communication between the processor and
+				the RAM memory cells. When the processor wants to read the contents of a
+				memory cell, it sends the address of the cell it wants to read over the
+				address bus and receives the contents of the cell over the data bus.
+				The size of this bus defines the amount of RAM that the CPU can manage.
+			</p>
+			<!-- FIN STEERING -->
+
+
+			<!-- CONTROL -->
+			<h3>
+				Control buses
+				<a id="BControl"></a>
+			</h3>
+			<p>
+				This set of signals is used to synchronise activities and transactions
+				with system peripherals. Some of these signals, such as R/W, are signals
+				that the CPU sends to indicate what type of operation is expected at that time.
+				Peripherals can also send control signals to the CPU, such as INT, RESET, BUS RQ.
+				The most important signals on the control bus are the timer signals,
+				which generate the time intervals during which operations are performed.
+				This type of signals depends directly on the type of the microprocessor.
+			</p>
+			<!-- FIN CONTROL -->
+		<!-- FIN BUSES -->
+
+		</section>
+	<!-- FIN SECCIONES DE LA PÁGINA -->
+
+
+
+
+
+	<!-- PIE DE PÁGINA -->
+		<footer>
+			<address>
+				<p> Authors: Maria Bakaikoa, Daniel Argáiz, Adrián Baldellou </p>
+				<a href="mailto:maria.bakaikoa@alum.unirioja.es"> Contact Maria Bakaikoa </a>
+				<a href="mailto:daniel.argaiz@alum.unirioja.es"> Contact Daniel Argáiz </a>
+				<a href="mailto:adrian.baldellou@alum.unirioja.es"> Contact Adrián Baldellou </a>
+			</address>
+
+			<div id="validaciones">
+				<img src="../../src/images/html5_icon.png" alt="HTML 5 validation icon" id="html5_icon">
+				<img src="../../src/images/css3_icon.gif" alt="CSS 3 validation icon" id="css3_icon">
+				<img src="../../src/images/wcag1AA.gif" alt="WCAG 2.0 (level AA) accessibility validation icon" id="wcag1AA_icon">
+			</div>
+		</footer>
+	<!-- FIN PIE DE PÁGINA -->
+
+
+
+
+
+	<!-- JAVASCRIPT EXTERNO -->
+		<script src="src/javascript/interacciones.js"></script>
+
+	</body>
+</html>
