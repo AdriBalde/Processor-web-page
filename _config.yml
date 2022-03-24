@@ -1,2 +1,3 @@
 header_pages:
   - index.html
+theme: jekyll-theme-minimal
