@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+
+	<!-- METAS -->
+		<!-- charset -->
+		<meta charset="utf-8">
+
+		<!-- keywords -->
+		<meta name="keywords" content="Sistemas Informáticos, Grado en Ingeniería Informática,
+    Grado en Matemáticas, Universidad de La Rioja, Microprocesadores, CPU, Procesadores, Caché,
+		Maria Bakaikoa, Daniel Argáiz, Adrián Baldellou">
+
+		<!-- description -->
+		<meta name="description" content="En esta página puedes encontrar información
+		acerca de las memorias caché de los computadores.">
+
+		<!-- autores -->
+		<meta name="Author" content="Maria Bakaikoa, Daniel Argáiz, Adrián Baldellou">
+
+		<!-- viewport para los css que usen @media -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<!-- HOJAS CSS EXTERNAS -->
+		<link rel="stylesheet" type="text/css" href="../../src/css/layout.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/backgrouds.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/text.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/media.css">
+		<link rel="stylesheet" type="text/css" href="../../src/css/animaciones.css">
+
+	<!-- TITLE -->
+		<title> Caché - Unirioja </title>
+
+	</head>
+
+
+
+
+
+	<body>
+
+	<!-- CABECERA DE LA PÁGINA CON SU NAVEGADOR -->
+		<header>
+
+			<!-- ICONO DE LA PÁGINA QUE AL CLICKARLO TE LLEVA AL INICIO -->
+			<div id="icono_cabecera">
+				<a href="Procesador.html">
+					<img src="../../src/images/icono_cabecera.png" alt="Logo de la página">
+					<h1>
+						   <span>E</span><!--
+            --><span>l</span><!--
+            --><span> </span><!--
+            --><span>P</span><!--
+            --><span>r</span><!--
+            --><span>o</span><!--
+            --><span>c</span><!--
+            --><span>e</span><!--
+            --><span>s</span><!--
+            --><span>a</span><!--
+            --><span>d</span><!--
+            --><span>o</span><!--
+            --><span>r</span>
+					</h1>
+				</a>
+			</div>
+			<!-- FIN ICONO DE LA PÁGINA QUE AL CLICKARLO TE LLEVA AL INICIO -->
+
+
+
+			<!-- NAVEGADOR PRINCIPAL DE LA PÁGINA -->
+			<nav id="navpricipal">
+				<ul>
+					<li>   <a href="Procesador.html"> Procesador </a>   </li>
+					<li id="Arquitectura">
+						<a href="Arquitectura.html"> Arquitectura <span class="simbolo fa fa-angle-down"></span><span class="simbolo fa fa-angle-up"></span> </a>
+						<ul>
+							<li>   <a href="UnidaddeControl.html"> Unidad de control </a>   </li>
+							<li>   <a href="UnidadAritmeticoLogica.html"> Unidad aritmético lógica </a>   </li>
+							<li>   <a href="Cache.html"> Caché </a>   </li>
+							<li>   <a href="Registros.html"> Registros </a>   </li>
+						</ul>
+					</li>
+					<li>   <a href="Conexiones.html"> Conexiones </a>   </li>
+					<li>   <a href="Tipos.html"> Tipos </a>   </li>
+				</ul>
+			</nav>
+			<!-- FIN NAVEGADOR PRINCIPAL DE LA PÁGINA -->
+
+
+
+			<!-- BOTON PARA CAMBIAR EL IDIOMA -->
+			<div id="idioma">
+				<a href="">ES</a>
+				<span id="es|en"> | </span>
+				<a href="../en/Cache.html">EN</a>
+			</div>
+			<!-- FIN BOTON PARA CAMBIAR EL IDIOMA -->
+		</header>
+	<!-- FIN CABECERA DE LA PÁGINA CON SU NAVEGADOR -->
+
+
+
+
+
+	<!-- NAVEGADOR DEL CONTENIDO -->
+		<nav>
+			<ul>
+				<li id="tcontenidos"> Tabla de contenidos </li>
+				<li>
+
+					<a href="#Definición">¿Que es una caché?</a>
+				</li>
+				<li>
+
+					<a href="#Funcionamiento">Funcionamiento</a>
+				</li>
+				<li>
+					<a href="#Niveles">Niveles</a>
+					<ul>
+						<li><a href="#L1">Caché L1</a></li>
+						<li><a href="#L2">Caché L2</a></li>
+						<li><a href="#L3">Caché L3</a></li>
+						<li><a href="#L4">Caché L4</a></li>
+					</ul>
+				</li>
+			</ul>
+
+		</nav>
+	<!-- FIN NAVEGADOR DEL CONTENIDO -->
+
+
+
+
+
+	<!-- SECCIONES DE LA PÁGINA -->
+		<section>
+
+		<!-- DEFINICION -->
+			<h2>
+				¿Que es una caché?
+				<a id="Definición"></a>
+			</h2>
+
+			<p>
+				La memoria caché es un tipo de memoria muy rápida que contiene un pequeño
+				conjunto de instrucciones que el equipo utiliza con asiduidad para realizar
+				sus tareas cotidianas. El equipo carga esas instrucciones en la caché
+				usando algoritmos complejos para poder acceder a ellos de manera rápida,
+				eficiente y sin más obstáculos de por medio, que hace que la eficiencia aumente en gran medida.
+			</p>
+		<!-- FIN DEFINICION -->
+
+
+
+
+		<!-- FUNCIONAMIENTO -->
+			<h2>
+				Funcionamiento
+				<a id="Funcionamiento"></a>
+			</h2>
+
+			<p>
+				La memoria caché no funciona igual que la memoria RAM, no podemos hacer
+				que la CPU se dirija a una dirección concreta dentro de la caché.
+				Esto es debido a que lo que hace la caché es copiar los datos que se
+				encuentran en la RAM y son cercanos a la dirección de memoria que está
+				ejecutando en ese momento la CPU, por lo que la caché copia en su interior
+				las direcciones de memoria más cercanas a la memoria caché.
+				Proporcionalmente hablando, hoy en día es habitual manejar capacidades de
+				varios terabytes cuando hablamos de discos duros, mientras que cuando hablamos de RAM,
+				esta cantidad se reduce a unos pocos gigabytes (hoy en día lo más habitual es ver 16 ó 8 GB de RAM).
+				La caché, por su parte, es todavía mucho más pequeña, y de hecho se mide en megabytes o kilobytes.
+			</p>
+		<!-- FIN FUNCIONAMIENTO -->
+
+
+
+
+		<!-- NIVELES -->
+			<h2>
+				Niveles
+				<a id="Niveles"></a>
+			</h2>
+
+			<p>
+				La caché se divide en un total de tres niveles generales al que podemos
+				sumar un cuarto que no resulta nada común y que juega un papel particular:
+				L1, L2, L3 y L4. La diferencia entre memoria caché L1, L2 y L3 obedece
+				a un orden de jerarquía establecido por cercanía al procesador, velocidad y capacidad.
+			</p>
+
+
+			<!-- L1 -->
+			<h3>
+				Caché L1
+				<a id="L1"></a>
+			</h3>
+			<p>
+				Es el nivel más básico, la más cercana al procesador y la más rápida.
+				También es la que menos capacidad tiene, por ejemplo un procesador de
+				dos núcleos como el Pentium G4560 tiene 64 KB en total (32 KB por núcleo),
+				aunque los modelos más potentes (serie Xeon y Epyc) pueden alcanzar los 3 MB sin problema.
+			</p>
+			<!-- FIN L1 -->
+
+
+			<!-- L2 -->
+			<h3>
+				Caché L2
+				<a id="L2"></a>
+			</h3>
+
+			<p>
+				Es un nivel intermedio que presenta un buen equilibrio entre capacidad,
+				cercanía y velocidad. Siguiendo el ejemplo anterior el Pentium G4560
+				tiene 512 KB (256 KB por núcleo) de caché L2, pero un Threadripper 2990WX
+				llega a los 16 MB en total (512 KB por núcleo).
+			</p>
+			<!-- FIN L2 -->
+
+
+			<!-- L3 -->
+			<h3>
+				Caché L3
+				<a id="L3"></a>
+			</h3>
+
+			<p>
+				Se posiciona en un nivel inferior a la anterior tanto en cercanía como en velocidad,
+				pero tiene una capacidad mucho mayor. El Penitum G4560 tiene 3 MB de caché
+				L3 compartida en sus dos núcleos, mientras que el Threadripper 2990WX viene
+				con un total de 64 MB (16 MB compartidos por cada bloque de ocho núcleos).
+			</p>
+			<!-- FIN L3 -->
+
+
+			<!-- L4 -->
+			<h3>
+				Caché L4
+				<a id="L4"></a>
+			</h3>
+
+			<p>
+				Es un tipo de memoria caché poco habitual que se utiliza normalmente como
+				apoyo para mejorar el rendimiento de GPUs integradas. Por ejemplo, el Core
+				i5 5775C venía con 6 MB de caché L3 y 128 MB de eDRAM como caché L4, que
+				se utilizaba como buffer para la gráfica Intel Iris Pro 6200 que integraba.
+				Así se mejoraba el ancho de banda y se reducía el impacto de tener
+				que recurrir a la RAM como memoria gráfica.
+			</p>
+			<!-- FIN L4 -->
+
+			<figure>
+				<img src="../../src/images/EsquemaNiveles.png" alt="Esquema de los niveles de caché" id="EsquemaNiveles.png">
+				<figcaption> Este es el esquema de la jerarquia de los niveles de la caché. </figcaption>
+			</figure>
+		<!-- FIN NIVELES -->
+
+		</section>
+	<!-- FIN SECCIONES DE LA PÁGINA -->
+
+
+
+
+
+	<!-- PIE DE PÁGINA -->
+		<footer>
+			<address>
+				<p> Autores: Maria Bakaikoa, Daniel Argáiz, Adrián Baldellou </p>
+				<a href="mailto:maria.bakaikoa@alum.unirioja.es"> Contacto Maria Bakaikoa </a>
+				<a href="mailto:daniel.argaiz@alum.unirioja.es"> Contacto Daniel Argáiz </a>
+				<a href="mailto:adrian.baldellou@alum.unirioja.es"> Contacto Adrián Baldellou </a>
+			</address>
+
+			<div id="validaciones">
+				<img src="../../src/images/html5_icon.png" alt="Icono de validación de HTML 5" id="html5_icon">
+				<img src="../../src/images/css3_icon.gif" alt="Icono de validación de CSS 3" id="css3_icon">
+				<img src="../../src/images/wcag1AA.gif" alt="Icono de validación de accesibilidad WCAG 2.0 (level AA)" id="wcag1AA_icon">
+			</div>
+		</footer>
+	<!-- FIN PIE DE PÁGINA -->
+
+
+
+
+
+	<!-- JAVASCRIPT EXTERNO -->
+		<script src="src/javascript/interacciones.js"></script>
+
+	</body>
+</html>
